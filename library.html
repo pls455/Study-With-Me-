@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>المكتبة | ادرس معي</title>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+<div class="container nav-content">
+
+<a href="index.html" class="brand">
+
+<div class="brand-icon">
+<i class="fa-solid fa-graduation-cap"></i>
+</div>
+
+<div>
+<strong>ادرس معي</strong>
+<small>Study With Me</small>
+</div>
+
+</a>
+
+
+<nav class="nav-links">
+
+<a href="index.html">
+<i class="fa-solid fa-house"></i>
+الرئيسية
+</a>
+
+<a class="active" href="library.html">
+<i class="fa-solid fa-book"></i>
+المكتبة
+</a>
+
+<a href="teams.html">
+<i class="fa-brands fa-microsoft"></i>
+Teams
+</a>
+
+<a href="directorates.html">
+<i class="fa-solid fa-building"></i>
+المديريات
+</a>
+
+<a href="links.html">
+<i class="fa-solid fa-link"></i>
+روابط مهمة
+</a>
+
+</nav>
+
+
+<div class="nav-actions">
+
+<button id="themeToggle" class="icon-btn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+
+<main class="container">
+
+
+<section class="page-header">
+
+<span class="eyebrow">
+المكتبة التعليمية
+</span>
+
+<h1>
+كل الملفات بمكان واحد
+</h1>
+
+<p>
+ابحث عن الدوسية أو الكتاب أو الامتحان الذي تحتاجه.
+</p>
+
+</section>
+
+
+<section class="search-box">
+
+<input
+id="searchInput"
+class="search-input"
+type="text"
+placeholder="ابحث عن اسم الملف أو الأستاذ أو المادة...">
+
+
+<div class="filter-grid">
+
+<select id="branchFilter">
+
+<option value="all">
+كل الفروع
+</option>
+
+<option value="علمي">
+علمي
+</option>
+
+<option value="أدبي">
+أدبي
+</option>
+
+<option value="مشترك">
+مشترك
+</option>
+
+</select>
+
+
+<select id="subjectFilter">
+
+<option value="all">
+كل المواد
+</option>
+
+</select>
+
+
+<select id="typeFilter">
+
+<option value="all">
+كل الأنواع
+</option>
+
+<option value="كتاب">
+كتب
+</option>
+
+<option value="دوسية">
+دوسيات
+</option>
+
+<option value="امتحان">
+امتحانات
+</option>
+
+<option value="تأسيس">
+تأسيس
+</option>
+
+</select>
+
+</div>
+
+</section>
+
+
+<div id="filesContainer"
+class="files-grid">
+
+<div class="empty">
+جاري تحميل الملفات...
+</div>
+
+</div>
+
+
+</main>
+
+
+<footer>
+
+<div class="container footer-inner">
+
+<div>
+
+<strong>
+ادرس معي
+</strong>
+
+<span>
+منصة مساعدة لطلاب التوجيهي في فلسطين 🇵🇸
+</span>
+
+</div>
+
+
+<div class="signature">
+
+توقيع
+<strong>أبو إبراهيم</strong>
+✍️
+
+</div>
+
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+let allFiles = [];
+
+
+async function loadLibrary() {
+
+const response =
+await fetch("content.json");
+
+const data =
+await response.json();
+
+allFiles =
+data.files || [];
+
+populateSubjects();
+
+renderFiles(allFiles);
+
+}
+
+
+function populateSubjects() {
+
+const select =
+document.getElementById(
+"subjectFilter"
+);
+
+const subjects =
+[
+...new Set(
+allFiles.map(
+file => file.subject
+)
+)
+].filter(Boolean);
+
+
+subjects.forEach(subject => {
+
+const option =
+document.createElement("option");
+
+option.value = subject;
+
+option.textContent = subject;
+
+select.appendChild(option);
+
+});
+
+}
+
+
+function filterFiles() {
+
+const query =
+document.getElementById(
+"searchInput"
+).value
+.toLowerCase()
+.trim();
+
+const branch =
+document.getElementById(
+"branchFilter"
+).value;
+
+const subject =
+document.getElementById(
+"subjectFilter"
+).value;
+
+const type =
+document.getElementById(
+"typeFilter"
+).value;
+
+
+const result =
+allFiles.filter(file => {
+
+const text =
+`${file.title} ${file.teacher || ""} ${file.subject || ""}`
+.toLowerCase();
+
+
+const searchMatch =
+text.includes(query);
+
+
+const branchMatch =
+branch === "all" ||
+file.branch === branch ||
+file.branch === "مشترك";
+
+
+let typeMatch = true;
+
+if (type === "كتاب") {
+
+typeMatch =
+file.type.includes("كتاب") ||
+file.type.includes("حلول");
+
+}
+
+if (type === "دوسية") {
+
+typeMatch =
+file.type.includes("دوسية") ||
+file.type.includes("ملخص");
+
+}
+
+if (type === "امتحان") {
+
+typeMatch =
+file.type.includes("امتحان") ||
+file.type.includes("وزاري") ||
+file.type.includes("تجريبي");
+
+}
+
+if (type === "تأسيس") {
+
+typeMatch =
+file.type.includes("تأسيس");
+
+}
+
+
+return (
+searchMatch &&
+branchMatch &&
+(subject === "all" ||
+file.subject === subject) &&
+typeMatch
+);
+
+});
+
+
+renderFiles(result);
+
+}
+
+
+function renderFiles(files) {
+
+const container =
+document.getElementById(
+"filesContainer"
+);
+
+container.innerHTML = "";
+
+
+if (!files.length) {
+
+container.innerHTML = `
+<div class="empty">
+<i class="fa-solid fa-box-open"></i>
+<p>ما لقينا ملفات مطابقة للبحث.</p>
+</div>
+`;
+
+return;
+
+}
+
+
+files.forEach(file => {
+
+const card =
+document.createElement("article");
+
+card.className =
+"file-card";
+
+
+card.innerHTML = `
+
+<div class="badges">
+
+<span class="badge">
+${file.branch || ""}
+</span>
+
+<span class="badge">
+${file.subject || ""}
+</span>
+
+<span class="badge">
+${file.type || ""}
+</span>
+
+</div>
+
+
+<h3>
+${file.title}
+</h3>
+
+
+<p>
+${file.teacher
+? "الأستاذ: " + file.teacher
+: "ملف تعليمي"}
+</p>
+
+
+<a
+class="file-btn"
+href="${file.url}"
+target="_blank"
+rel="noopener">
+
+<i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+فتح الملف
+
+</a>
+
+`;
+
+
+container.appendChild(card);
+
+});
+
+}
+
+
+document
+.getElementById("searchInput")
+.addEventListener(
+"input",
+filterFiles
+);
+
+
+document
+.getElementById("branchFilter")
+.addEventListener(
+"change",
+filterFiles
+);
+
+
+document
+.getElementById("subjectFilter")
+.addEventListener(
+"change",
+filterFiles
+);
+
+
+document
+.getElementById("typeFilter")
+.addEventListener(
+"change",
+filterFiles
+);
+
+
+loadLibrary();
+
+</script>
+
+
+</body>
+
+  </html>

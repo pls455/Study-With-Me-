@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ادرس معي - Study With Me | منصة توجيهي فلسطين</title>
+    <!-- خطوط جوجل (Tajawal) لتصميم عصري ومقروء -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- أيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h1>ادرس معي</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="active">الرئيسية</a>
+                <a href="#files-section">المواد والملفات</a>
+                <a href="#teams-section">مشاكل Teams</a>
+                <a href="#directorates-section">المديريات</a>
+                <a href="#links-section">روابط مهمة</a>
+            </nav>
+            <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- قسم الترحيب (Hero Section) -->
+        <section id="home" class="hero">
+            <h2>مرحباً بك في منصة <span>ادرس معي</span></h2>
+            <p>المكتبة التعليمية الشاملة لطلاب التوجيهي في غزة وفلسطين. ابحث، حمل، وادرس بسهولة.</p>
+            
+            <!-- أدوات البحث والفلترة -->
+            <div class="search-filter-box">
+                <div class="search-bar">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="ابحث عن مادة، اسم دوسية، أستاذ، أو وزاري...">
+                </div>
+                <div class="filters">
+                    <select id="branchFilter">
+                        <option value="all">كل الفروع</option>
+                        <option value="علمي">الفرع العلمي</option>
+                        <option value="أدبي">الفرع الأدبي</option>
+                        <option value="مشترك">مشترك</option>
+                    </select>
+                    <select id="subjectFilter">
+                        <option value="all">كل المواد</option>
+                        <!-- سيتم تعبئتها بواسطة JS -->
+                    </select>
+                    <select id="typeFilter">
+                        <option value="all">كل الأنواع</option>
+                        <option value="كتاب">كتب وحلول</option>
+                        <option value="دوسية">دوسيات وملخصات</option>
+                        <option value="امتحان">امتحانات (وزاري/تجريبي)</option>
+                        <option value="تأسيس">ملفات تأسيس</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم عرض الملفات -->
+        <section id="files-section" class="section">
+            <div class="section-header">
+                <h3><i class="fa-solid fa-folder-open"></i> المكتبة التعليمية</h3>
+                <span class="results-count" id="resultsCount">جاري التحميل...</span>
+            </div>
+            
+            <div id="filesContainer" class="grid-container">
+                <!-- سيتم حقن الكروت هنا عبر JavaScript -->
+                <div class="loading-state">جاري تحميل الملفات...</div>
+            </div>
+            <div id="emptyState" class="empty-state hidden">
+                <i class="fa-solid fa-box-open"></i>
+                <p>لا توجد ملفات تطابق بحثك. جرب كلمات أخرى.</p>
+            </div>
+        </section>
+
+        <!-- قسم مشاكل وحلول Teams -->
+        <section id="teams-section" class="section bg-light rounded-box">
+            <div class="section-header">
+                <h3><i class="fa-brands fa-microsoft"></i> مشاكل وحلول Microsoft Teams</h3>
+            </div>
+            <div class="teams-alert">
+                <strong><i class="fa-solid fa-triangle-exclamation"></i> تنبيه مهم:</strong>
+                الطالب لا يستطيع التسجيل في فرق Teams أو تفعيله إلا إذا كان مسجلاً في eSchool.
+                <br> <b>eSchool</b> = المدرسة (بياناتك وشهاداتك) | <b>Teams</b> = الصف (الحصص وشرح الدروس).
+            </div>
+            <div id="teamsContainer" class="accordion-container">
+                <!-- سيتم حقن المشاكل والحلول هنا -->
+            </div>
+        </section>
+
+        <!-- قسم المديريات -->
+        <section id="directorates-section" class="section">
+            <div class="section-header">
+                <h3><i class="fa-solid fa-building"></i> التوجه إلى المديريات وأرقام التواصل</h3>
+            </div>
+            <div class="info-alert">
+                <p>أي طالب انقطع عن الدراسة خلال الحرب ولم يسجل في التعليم الوزاري (عن بعد)، عليه التوجه للمديرية مصطحباً الهوية وصورة آخر شهادة. <br> الدوام: الأحد - الخميس (9:00 ص - 1:00 م).</p>
+            </div>
+            <div id="directoratesContainer" class="grid-container">
+                <!-- سيتم حقن بيانات المديريات هنا -->
+            </div>
+        </section>
+
+        <!-- قسم الروابط المهمة -->
+        <section id="links-section" class="section bg-light rounded-box">
+            <div class="section-header">
+                <h3><i class="fa-solid fa-link"></i> روابط التعليم الإلكتروني المهمة</h3>
+            </div>
+            <div id="linksContainer" class="links-grid">
+                <!-- سيتم حقن الروابط هنا -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>تم الإنشاء لدعم طلبة التوجيهي في فلسطين 🇵🇸 | <i class="fa-solid fa-heart"></i> ادرس معي</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

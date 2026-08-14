@@ -3,132 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ادرس معي - Study With Me | منصة توجيهي فلسطين</title>
-    <!-- خطوط جوجل (Tajawal) لتصميم عصري ومقروء -->
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <!-- أيقونات FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>ادرس معي | Study With Me</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- شريط التنقل العلوي -->
-    <header class="navbar">
-        <div class="container nav-content">
-            <div class="logo">
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <a href="index.html" class="brand">
+
+            <div class="brand-icon">
                 <i class="fa-solid fa-graduation-cap"></i>
-                <h1>ادرس معي</h1>
             </div>
-            <nav class="nav-links">
-                <a href="#home" class="active">الرئيسية</a>
-                <a href="#files-section">المواد والملفات</a>
-                <a href="#teams-section">مشاكل Teams</a>
-                <a href="#directorates-section">المديريات</a>
-                <a href="#links-section">روابط مهمة</a>
-            </nav>
-            <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+
+            <div>
+                <strong>ادرس معي</strong>
+                <small>Study With Me</small>
+            </div>
+
+        </a>
+
+        <nav class="nav-links">
+
+            <a class="active" href="index.html">
+                <i class="fa-solid fa-house"></i>
+                الرئيسية
+            </a>
+
+            <a href="library.html">
+                <i class="fa-solid fa-book"></i>
+                المكتبة
+            </a>
+
+            <a href="teams.html">
+                <i class="fa-brands fa-microsoft"></i>
+                Teams
+            </a>
+
+            <a href="directorates.html">
+                <i class="fa-solid fa-building"></i>
+                المديريات
+            </a>
+
+            <a href="links.html">
+                <i class="fa-solid fa-link"></i>
+                روابط مهمة
+            </a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button id="themeToggle" class="icon-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="menuToggle" class="icon-btn mobile-only">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
         </div>
-    </header>
 
-    <main class="container">
-        <!-- قسم الترحيب (Hero Section) -->
-        <section id="home" class="hero">
-            <h2>مرحباً بك في منصة <span>ادرس معي</span></h2>
-            <p>المكتبة التعليمية الشاملة لطلاب التوجيهي في غزة وفلسطين. ابحث، حمل، وادرس بسهولة.</p>
-            
-            <!-- أدوات البحث والفلترة -->
-            <div class="search-filter-box">
-                <div class="search-bar">
-                    <i class="fa-solid fa-search"></i>
-                    <input type="text" id="searchInput" placeholder="ابحث عن مادة، اسم دوسية، أستاذ، أو وزاري...">
-                </div>
-                <div class="filters">
-                    <select id="branchFilter">
-                        <option value="all">كل الفروع</option>
-                        <option value="علمي">الفرع العلمي</option>
-                        <option value="أدبي">الفرع الأدبي</option>
-                        <option value="مشترك">مشترك</option>
-                    </select>
-                    <select id="subjectFilter">
-                        <option value="all">كل المواد</option>
-                        <!-- سيتم تعبئتها بواسطة JS -->
-                    </select>
-                    <select id="typeFilter">
-                        <option value="all">كل الأنواع</option>
-                        <option value="كتاب">كتب وحلول</option>
-                        <option value="دوسية">دوسيات وملخصات</option>
-                        <option value="امتحان">امتحانات (وزاري/تجريبي)</option>
-                        <option value="تأسيس">ملفات تأسيس</option>
-                    </select>
-                </div>
-            </div>
-        </section>
+    </div>
 
-        <!-- قسم عرض الملفات -->
-        <section id="files-section" class="section">
-            <div class="section-header">
-                <h3><i class="fa-solid fa-folder-open"></i> المكتبة التعليمية</h3>
-                <span class="results-count" id="resultsCount">جاري التحميل...</span>
-            </div>
-            
-            <div id="filesContainer" class="grid-container">
-                <!-- سيتم حقن الكروت هنا عبر JavaScript -->
-                <div class="loading-state">جاري تحميل الملفات...</div>
-            </div>
-            <div id="emptyState" class="empty-state hidden">
-                <i class="fa-solid fa-box-open"></i>
-                <p>لا توجد ملفات تطابق بحثك. جرب كلمات أخرى.</p>
-            </div>
-        </section>
+</header>
 
-        <!-- قسم مشاكل وحلول Teams -->
-        <section id="teams-section" class="section bg-light rounded-box">
-            <div class="section-header">
-                <h3><i class="fa-brands fa-microsoft"></i> مشاكل وحلول Microsoft Teams</h3>
-            </div>
-            <div class="teams-alert">
-                <strong><i class="fa-solid fa-triangle-exclamation"></i> تنبيه مهم:</strong>
-                الطالب لا يستطيع التسجيل في فرق Teams أو تفعيله إلا إذا كان مسجلاً في eSchool.
-                <br> <b>eSchool</b> = المدرسة (بياناتك وشهاداتك) | <b>Teams</b> = الصف (الحصص وشرح الدروس).
-            </div>
-            <div id="teamsContainer" class="accordion-container">
-                <!-- سيتم حقن المشاكل والحلول هنا -->
-            </div>
-        </section>
 
-        <!-- قسم المديريات -->
-        <section id="directorates-section" class="section">
-            <div class="section-header">
-                <h3><i class="fa-solid fa-building"></i> التوجه إلى المديريات وأرقام التواصل</h3>
-            </div>
-            <div class="info-alert">
-                <p>أي طالب انقطع عن الدراسة خلال الحرب ولم يسجل في التعليم الوزاري (عن بعد)، عليه التوجه للمديرية مصطحباً الهوية وصورة آخر شهادة. <br> الدوام: الأحد - الخميس (9:00 ص - 1:00 م).</p>
-            </div>
-            <div id="directoratesContainer" class="grid-container">
-                <!-- سيتم حقن بيانات المديريات هنا -->
-            </div>
-        </section>
+<div id="mobileNav" class="mobile-nav">
 
-        <!-- قسم الروابط المهمة -->
-        <section id="links-section" class="section bg-light rounded-box">
-            <div class="section-header">
-                <h3><i class="fa-solid fa-link"></i> روابط التعليم الإلكتروني المهمة</h3>
-            </div>
-            <div id="linksContainer" class="links-grid">
-                <!-- سيتم حقن الروابط هنا -->
-            </div>
-        </section>
-    </main>
+    <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+        الرئيسية
+    </a>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>تم الإنشاء لدعم طلبة التوجيهي في فلسطين 🇵🇸 | <i class="fa-solid fa-heart"></i> ادرس معي</p>
+    <a href="library.html">
+        <i class="fa-solid fa-book"></i>
+        المكتبة التعليمية
+    </a>
+
+    <a href="teams.html">
+        <i class="fa-brands fa-microsoft"></i>
+        حلول Teams
+    </a>
+
+    <a href="directorates.html">
+        <i class="fa-solid fa-building"></i>
+        المديريات
+    </a>
+
+    <a href="links.html">
+        <i class="fa-solid fa-link"></i>
+        روابط مهمة
+    </a>
+
+</div>
+
+
+<main class="container">
+
+    <section class="hero dashboard-hero">
+
+        <div class="hero-copy">
+
+            <span class="eyebrow">
+                منصة طلاب التوجيهي 🇵🇸
+            </span>
+
+            <h1>
+                كل دراستك،
+                <span>بمكان واحد.</span>
+            </h1>
+
+            <p>
+                ملفات، دوسيات، تأسيس، روابط مهمة وحلول للمشاكل التعليمية،
+                مرتبة بطريقة تخليك توصل للمعلومة بدون ما تعمل رحلة استكشافية
+                داخل الصفحة.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="library.html" class="btn btn-primary">
+                    <i class="fa-solid fa-book-open"></i>
+                    تصفح المكتبة
+                </a>
+
+                <a href="teams.html" class="btn btn-ghost">
+                    <i class="fa-solid fa-circle-question"></i>
+                    حلول Teams
+                </a>
+
+            </div>
+
         </div>
-    </footer>
 
-    <!-- Toast Notification -->
-    <div id="toast" class="toast"></div>
 
-    <script src="script.js"></script>
+        <div class="hero-card">
+
+            <div class="hero-orb"></div>
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <strong>ادرس بتركيز</strong>
+
+            <span>
+                نظم وقتك ووصل للمصدر بسرعة
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <strong id="filesCount">...</strong>
+
+            <span>ملف تعليمي</span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <strong id="subjectsCount">...</strong>
+
+            <span>مادة</span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-link"></i>
+
+            <strong id="linksCount">...</strong>
+
+            <span>رابط مهم</span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-building"></i>
+
+            <strong id="dirsCount">...</strong>
+
+            <span>مديرية</span>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="section-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    الوصول السريع
+                </span>
+
+                <h2>
+                    وين بدك تروح؟
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <a href="library.html" class="feature-card">
+
+                <span class="feature-icon purple">
+                    <i class="fa-solid fa-folder-open"></i>
+                </span>
+
+                <h3>
+                    المكتبة التعليمية
+                </h3>
+
+                <p>
+                    ابحث عن الملفات والدوسيات حسب المادة والفرع والنوع.
+                </p>
+
+                <span class="card-link">
+                    فتح المكتبة
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+            </a>
+
+
+            <a href="teams.html" class="feature-card">
+
+                <span class="feature-icon blue">
+                    <i class="fa-brands fa-microsoft"></i>
+                </span>
+
+                <h3>
+                    مشاكل Teams
+                </h3>
+
+                <p>
+                    حلول مرتبة لأكثر مشاكل تسجيل الدخول والحصص والواجبات.
+                </p>
+
+                <span class="card-link">
+                    عرض الحلول
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+            </a>
+
+
+            <a href="directorates.html" class="feature-card">
+
+                <span class="feature-icon cyan">
+                    <i class="fa-solid fa-building"></i>
+                </span>
+
+                <h3>
+                    المديريات
+                </h3>
+
+                <p>
+                    أرقام التواصل والمواقع والمعلومات المتوفرة للمديريات.
+                </p>
+
+                <span class="card-link">
+                    المعلومات
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+            </a>
+
+
+            <a href="links.html" class="feature-card">
+
+                <span class="feature-icon pink">
+                    <i class="fa-solid fa-link"></i>
+                </span>
+
+                <h3>
+                    روابط مهمة
+                </h3>
+
+                <p>
+                    eSchool والدعم الفني والتطبيقات والمصادر الرسمية.
+                </p>
+
+                <span class="card-link">
+                    عرض الروابط
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="tip-panel">
+
+        <i class="fa-solid fa-lightbulb"></i>
+
+        <div>
+
+            <h3>
+                نصيحة سريعة
+            </h3>
+
+            <p>
+                ابدأ بالمكتبة، اختر فرعك ومادتك، ثم افتح المصدر الذي تحتاجه مباشرة.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+
+            <strong>
+                ادرس معي
+            </strong>
+
+            <span>
+                منصة مساعدة لطلاب التوجيهي في فلسطين 🇵🇸
+            </span>
+
+        </div>
+
+        <div class="signature">
+            توقيع
+            <strong>أبو إبراهيم</strong>
+            ✍️
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>

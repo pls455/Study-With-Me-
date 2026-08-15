@@ -1,0 +1,3303 @@
+{
+  "site": {
+    "name": "ادرس معي",
+    "nameEn": "Study With Me",
+    "description": "منصة تعليمية مجانية تجمع مصادر وملفات واختبارات التوجيهي لطلاب غزة وفلسطين.",
+    "footer": "صُنع بحب لخدمة طلاب غزة ❤️\nأبو إبراهيم"
+  },
+  "branches": [
+    {
+      "id": "scientific",
+      "name": "علمي"
+    },
+    {
+      "id": "literary",
+      "name": "أدبي / علوم إنسانية"
+    },
+    {
+      "id": "sharia",
+      "name": "شرعي"
+    },
+    {
+      "id": "commercial",
+      "name": "تجاري"
+    },
+    {
+      "id": "industrial",
+      "name": "صناعي"
+    },
+    {
+      "id": "entrepreneurial",
+      "name": "ريادة وأعمال"
+    },
+    {
+      "id": "home-economics",
+      "name": "اقتصاد منزلي"
+    },
+    {
+      "id": "agricultural",
+      "name": "زراعي"
+    },
+    {
+      "id": "hotel",
+      "name": "فندقي"
+    },
+    {
+      "id": "technology",
+      "name": "تكنولوجي"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "math",
+      "name": "الرياضيات",
+      "icon": "📐"
+    },
+    {
+      "id": "arabic",
+      "name": "اللغة العربية",
+      "icon": "📘"
+    },
+    {
+      "id": "english",
+      "name": "اللغة الإنجليزية",
+      "icon": "🇬🇧"
+    },
+    {
+      "id": "physics",
+      "name": "الفيزياء",
+      "icon": "⚛️"
+    },
+    {
+      "id": "chemistry",
+      "name": "الكيمياء",
+      "icon": "🧪"
+    },
+    {
+      "id": "biology",
+      "name": "الأحياء",
+      "icon": "🧬"
+    },
+    {
+      "id": "technology",
+      "name": "التكنولوجيا",
+      "icon": "💻"
+    },
+    {
+      "id": "religion",
+      "name": "التربية الإسلامية",
+      "icon": "☪️"
+    },
+    {
+      "id": "geography",
+      "name": "الجغرافيا",
+      "icon": "🌍"
+    },
+    {
+      "id": "history",
+      "name": "التاريخ",
+      "icon": "📜"
+    },
+    {
+      "id": "culture",
+      "name": "الثقافة",
+      "icon": "📖"
+    },
+    {
+      "id": "quran",
+      "name": "القرآن الكريم",
+      "icon": "📖"
+    }
+  ],
+  "resources": [
+    {
+      "id": "ministry-home",
+      "title": "وزارة التربية والتعليم العالي الفلسطينية",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "مصدر رسمي",
+      "unit": "",
+      "description": "الموقع الرسمي لوزارة التربية والتعليم العالي الفلسطينية.",
+      "url": "https://www.moe.edu.ps/",
+      "tags": [
+        "وزارة التربية",
+        "مصدر رسمي"
+      ],
+      "dateAdded": "2026-08-15",
+      "source": "وزارة التربية والتعليم العالي الفلسطينية"
+    },
+    {
+      "id": "ministry-gaza-subjects",
+      "title": "الرزم التعليمية - غزة",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "مصدر رسمي",
+      "unit": "",
+      "description": "الرزم التعليمية المنشورة عبر وزارة التربية والتعليم العالي الفلسطينية.",
+      "url": "https://www.moe.edu.ps/gaza/subjects",
+      "tags": [
+        "وزارة التربية",
+        "رزم",
+        "غزة"
+      ],
+      "dateAdded": "2026-08-15",
+      "source": "وزارة التربية والتعليم العالي الفلسطينية"
+    },
+    {
+      "id": "ministry-services",
+      "title": "خدمات وزارة التربية والتعليم",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "مصدر رسمي",
+      "unit": "",
+      "description": "صفحة خدمات وزارة التربية والتعليم.",
+      "url": "https://www.moe.edu.ps/services/all",
+      "tags": [
+        "وزارة التربية",
+        "خدمات"
+      ],
+      "dateAdded": "2026-08-15",
+      "source": "وزارة التربية والتعليم العالي الفلسطينية"
+    },
+    {
+      "id": "ministry-gaza",
+      "title": "التعليم الإلكتروني - غزة",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "مصدر رسمي",
+      "unit": "",
+      "description": "صفحة التعليم الإلكتروني في غزة.",
+      "url": "https://www.moe.edu.ps/gaza",
+      "tags": [
+        "تعليم إلكتروني",
+        "غزة"
+      ],
+      "dateAdded": "2026-08-15",
+      "source": "وزارة التربية والتعليم العالي الفلسطينية"
+    },
+    {
+      "id": "remedial-a-intro",
+      "title": "المدرسة الاستدراكية (أ) - التعريف",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "المدرسة الاستدراكية",
+      "unit": "",
+      "description": "تعريف المدرسة الاستدراكية (أ).",
+      "url": "https://www.facebook.com/share/p/1Btxa7vWSc/",
+      "tags": [
+        "استدراكية",
+        "مدرسة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-a-guide",
+      "title": "المدرسة الاستدراكية (أ) - دليل المدرسة",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "المدرسة الاستدراكية",
+      "unit": "",
+      "description": "دليل المدرسة الاستدراكية (أ).",
+      "url": "https://www.facebook.com/share/p/1DBPTEFKQk/",
+      "tags": [
+        "استدراكية",
+        "دليل"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-a-schedule-1",
+      "title": "المدرسة الاستدراكية (أ) - جدول الحصص 1",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "المدرسة الاستدراكية",
+      "unit": "",
+      "description": "جدول حصص منشور للمدرسة الاستدراكية (أ).",
+      "url": "https://www.facebook.com/share/p/1A8iaM5YWc/",
+      "tags": [
+        "استدراكية",
+        "جدول"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-a-schedule-2",
+      "title": "المدرسة الاستدراكية (أ) - جدول الحصص 2",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "المدرسة الاستدراكية",
+      "unit": "",
+      "description": "جدول حصص منشور للمدرسة الاستدراكية (أ).",
+      "url": "https://www.facebook.com/share/p/1AmtHdVMTJ/",
+      "tags": [
+        "استدراكية",
+        "جدول"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-apply",
+      "title": "تقديم طلب المدرسة الاستدراكية",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "المدرسة الاستدراكية",
+      "unit": "",
+      "description": "بوابة تقديم الطلبات.",
+      "url": "https://gaza.moe.edu.ps/students/create",
+      "tags": [
+        "تقديم",
+        "استدراكية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "helpdesk",
+      "title": "الدعم الفني - غزة",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "دعم فني",
+      "unit": "",
+      "description": "منصة الدعم الفني التابعة لوزارة التربية في غزة.",
+      "url": "https://gaza.moe.edu.ps/helpdesk",
+      "tags": [
+        "دعم",
+        "وزارة التربية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "schools-guidelines",
+      "title": "دليل الإيسكول والتيمز",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "دليل",
+      "unit": "",
+      "description": "دليل وروابط مهمة للإيسكول والتيمز.",
+      "url": "https://www.moe.edu.ps/gaza/important-links-Guidelines",
+      "tags": [
+        "Teams",
+        "eSchool"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-a-wa-1",
+      "title": "مجموعة واتساب المدرسة الاستدراكية (أ) 1",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "WhatsApp",
+      "unit": "",
+      "description": "مجموعة واتساب مرتبطة بالمدرسة الاستدراكية (أ).",
+      "url": "https://chat.whatsapp.com/B9qYh63hJ3K8Qk313uT9f8",
+      "tags": [
+        "واتساب"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-a-wa-2",
+      "title": "مجموعة واتساب المدرسة الاستدراكية (أ) 2",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "WhatsApp",
+      "unit": "",
+      "description": "مجموعة واتساب مرتبطة بالمدرسة الاستدراكية (أ).",
+      "url": "https://chat.whatsapp.com/EkKupjOu4UbBX37RvAul1n?mode=hqrt1",
+      "tags": [
+        "واتساب"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-a-facebook",
+      "title": "صفحة المدرسة الاستدراكية (أ) - طلاب غزة",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "Facebook",
+      "unit": "",
+      "description": "صفحة فيسبوك للمدرسة الاستدراكية (أ).",
+      "url": "https://www.facebook.com/people/%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%B3%D8%A9-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AF%D8%B1%D8%A7%D9%83%D9%8A%D8%A9-%D8%A3-%D9%84%D8%B7%D9%84%D8%A7%D8%A8-%D8%BA%D8%B2%D8%A9/61582410808746/",
+      "tags": [
+        "فيسبوك",
+        "استدراكية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-b-intro",
+      "title": "المدرسة الاستدراكية (ب) - التعريف",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "المدرسة الاستدراكية",
+      "unit": "",
+      "description": "تعريف المدرسة الاستدراكية (ب).",
+      "url": "https://www.facebook.com/share/p/19wMCPG9Zn/",
+      "tags": [
+        "استدراكية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-b-program",
+      "title": "المدرسة الاستدراكية (ب) - البرنامج ومواعيد الحصص",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "المدرسة الاستدراكية",
+      "unit": "",
+      "description": "البرنامج ومواعيد الحصص المنشورة.",
+      "url": "https://www.facebook.com/share/p/1BK27PjH2B/",
+      "tags": [
+        "استدراكية",
+        "برنامج"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-b-teams",
+      "title": "المدرسة الاستدراكية (ب) - حصص Teams",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "Teams",
+      "unit": "",
+      "description": "معلومات حصص Teams.",
+      "url": "https://www.facebook.com/share/p/19nufbtj9e/",
+      "tags": [
+        "Teams"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-b-recordings",
+      "title": "المدرسة الاستدراكية (ب) - تسجيلات الحصص",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "تسجيلات",
+      "unit": "",
+      "description": "تسجيلات الحصص المنشورة.",
+      "url": "https://www.facebook.com/share/p/1DMdN3rrJC/",
+      "tags": [
+        "تسجيلات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-b-wa",
+      "title": "مجموعة المدرسة الاستدراكية (ب)",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "Facebook",
+      "unit": "",
+      "description": "منشور متعلق بمجموعة التواصل.",
+      "url": "https://www.facebook.com/share/p/17LXrxNySt/",
+      "tags": [
+        "مجموعة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "remedial-b-materials",
+      "title": "مجمع المواد - المدرسة الاستدراكية (ب)",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "folder",
+      "category": "مواد",
+      "unit": "",
+      "description": "مجلد مواد على SharePoint.",
+      "url": "https://nablusdoe-my.sharepoint.com/:f:/g/personal/859668709_nablus_edu_ps/EpVlBMOVwPBMix7EiKRp59QBD7cVC6W8KU7vDbrDin6fvg?e=DLS6JQ",
+      "tags": [
+        "SharePoint",
+        "مواد"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "virtual-schools",
+      "title": "صفحات المدارس الافتراضية",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "external",
+      "category": "مدارس افتراضية",
+      "unit": "",
+      "description": "صفحات المدارس الافتراضية.",
+      "url": "https://www.moe.edu.ps/gaza/important-links-Schools",
+      "tags": [
+        "مدارس افتراضية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-arabic",
+      "title": "الإختبارات الوزارية 2008 علمي - عربي - دورة أولى غزة",
+      "subject": "اللغة العربية",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/1byTioQS3yvsQW_Wuiwkoqfg7hPnJvA0L/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "وزاري",
+        "غزة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-math1",
+      "title": "الإختبارات الوزارية 2008 علمي - رياضيات 1",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/1VJjfvz5iBklPeJaKBL1A5HrzAvpezsA7/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "رياضيات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-math2",
+      "title": "الإختبارات الوزارية 2008 علمي - رياضيات 2",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/11lNkm2t8fkXiQyHYCe1pQTw08UU838ri/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "رياضيات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-english",
+      "title": "الإختبارات الوزارية 2008 علمي - إنجليزي",
+      "subject": "اللغة الإنجليزية",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/1_rhkjpzGZs1SkPP3VO_7iN_HaVfYzG01/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "إنجليزي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-physics",
+      "title": "الإختبارات الوزارية 2008 علمي - فيزياء",
+      "subject": "الفيزياء",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/1cwyaHcb-uYjTJhR_EcMuzykqgI65Tm7D/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "فيزياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-chemistry",
+      "title": "الإختبارات الوزارية 2008 علمي - كيمياء",
+      "subject": "الكيمياء",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/1xdxTkyI1SBCbOcI8Q4n_IXRKfj3g1p9F/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "كيمياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-biology",
+      "title": "الإختبارات الوزارية 2008 علمي - أحياء",
+      "subject": "الأحياء",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/1PtU1_6MkKIeRbScDZhPCuQUdEvM7RNbH/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "أحياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-technology",
+      "title": "الإختبارات الوزارية 2008 علمي - تكنولوجيا",
+      "subject": "التكنولوجيا",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/1_WflFRkG-K6MwlDDwQvbPyEWd3Ub6GJK/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "تكنولوجيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "ministry-2008-religion",
+      "title": "الإختبارات الوزارية 2008 علمي - تربية إسلامية",
+      "subject": "التربية الإسلامية",
+      "branch": "scientific",
+      "year": 2008,
+      "type": "exam",
+      "category": "وزاري",
+      "unit": "",
+      "description": "اختبار وزاري 2008 علمي، دورة أولى - غزة.",
+      "url": "https://drive.google.com/file/d/1n2UzNP-oqEN6-R0hNpD-lpEW21s9drpz/view?usp=drivesdk",
+      "tags": [
+        "2008",
+        "دين"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-min-2025",
+      "title": "وزاري الرياضيات 2025",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2025,
+      "type": "folder",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجلد اختبارات وزاري الرياضيات 2025.",
+      "url": "https://drive.google.com/drive/folders/1E7ADQLwl3jSTOQzP38C-lOsm1nM9Zlj_",
+      "tags": [
+        "رياضيات",
+        "وزاري",
+        "2025"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-min-2024",
+      "title": "وزاري الرياضيات 2024",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2024,
+      "type": "folder",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجلد اختبارات وزاري الرياضيات 2024.",
+      "url": "https://drive.google.com/drive/folders/15FIniI7NULbhkdegR_FiY2idwMU9WIW4",
+      "tags": [
+        "رياضيات",
+        "وزاري",
+        "2024"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-min-2023",
+      "title": "وزاري الرياضيات 2023",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2023,
+      "type": "folder",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجلد اختبارات وزاري الرياضيات 2023.",
+      "url": "https://drive.google.com/drive/folders/15GFDLluricUHvKLAJQQJsfWNWs4fuYjR",
+      "tags": [
+        "رياضيات",
+        "وزاري",
+        "2023"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-min-2022",
+      "title": "وزاري الرياضيات 2022",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2022,
+      "type": "folder",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجلد اختبارات وزاري الرياضيات 2022.",
+      "url": "https://drive.google.com/drive/folders/15ING9kQGZTgqzpSvzf-QCtsrtR9A5kV9",
+      "tags": [
+        "رياضيات",
+        "وزاري",
+        "2022"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-min-2021",
+      "title": "وزاري الرياضيات 2021",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2021,
+      "type": "folder",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجلد اختبارات وزاري الرياضيات 2021.",
+      "url": "https://drive.google.com/drive/folders/14jehNTY9M4VJSkialfWZquQlDgfjSmHc",
+      "tags": [
+        "رياضيات",
+        "وزاري",
+        "2021"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-min-2020",
+      "title": "وزاري الرياضيات 2020",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2020,
+      "type": "folder",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجلد اختبارات وزاري الرياضيات 2020.",
+      "url": "https://drive.google.com/drive/folders/14jigydXFWXaYGTK5ukYLfzbLHQSyaiWG",
+      "tags": [
+        "رياضيات",
+        "وزاري",
+        "2020"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-mock-2025",
+      "title": "اختبار تجريبي الرياضيات 2025",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2025,
+      "type": "folder",
+      "category": "تجريبي",
+      "unit": "",
+      "description": "اختبارات تجريبية للرياضيات 2025.",
+      "url": "https://drive.google.com/drive/folders/15rtFhqzs5p3ToXYFyho3e5ViClmyMXbD",
+      "tags": [
+        "رياضيات",
+        "تجريبي",
+        "2025"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-mock-2026",
+      "title": "اختبار تجريبي الرياضيات 2026",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2026,
+      "type": "folder",
+      "category": "تجريبي",
+      "unit": "",
+      "description": "اختبارات تجريبية للرياضيات 2026.",
+      "url": "https://drive.google.com/drive/folders/1TrUDqPlK6ly-XOjE5Y99zaGmafSHPBf8",
+      "tags": [
+        "رياضيات",
+        "تجريبي",
+        "2026"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-gaza-pack-test",
+      "title": "اختبار تجريبي رزم غزة - رياضيات",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2026,
+      "type": "form",
+      "category": "تجريبي",
+      "unit": "",
+      "description": "اختبار تجريبي مرتبط بالرزم التعليمية في غزة.",
+      "url": "https://forms.gle/yp73Tt6nKV1Ectqn6",
+      "tags": [
+        "رياضيات",
+        "رزم",
+        "Forms"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-2026-scientific",
+      "title": "الكامل 2026 - العلمي",
+      "subject": "عام",
+      "branch": "scientific",
+      "year": 2026,
+      "type": "folder",
+      "category": "الكامل",
+      "unit": "",
+      "description": "مجلد الكامل 2026 للفرع العلمي.",
+      "url": "https://drive.google.com/drive/folders/1wbm2CL28-oXJGAff2_AR1sYyuQiYwlgU",
+      "tags": [
+        "الكامل",
+        "2026"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-2026-lit-sharia",
+      "title": "الكامل 2026 - الأدبي والشرعي",
+      "subject": "عام",
+      "branch": "all",
+      "year": 2026,
+      "type": "folder",
+      "category": "الكامل",
+      "unit": "",
+      "description": "مجلد الكامل 2026 للأدبي والشرعي.",
+      "url": "https://drive.google.com/drive/folders/1K-wYsUMK4o0twZ2DFF8aw36vskYkz0mH",
+      "tags": [
+        "الكامل",
+        "2026"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-2026-commercial",
+      "title": "الكامل 2026 - التجاري",
+      "subject": "عام",
+      "branch": "commercial",
+      "year": 2026,
+      "type": "folder",
+      "category": "الكامل",
+      "unit": "",
+      "description": "مجلد الكامل 2026 للتجاري.",
+      "url": "https://drive.google.com/drive/folders/1ZJ651Vxa2hcUtiWHxHboelpRB6h6HXOm",
+      "tags": [
+        "الكامل",
+        "2026"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-2026-industrial",
+      "title": "الكامل 2026 - الصناعي",
+      "subject": "عام",
+      "branch": "industrial",
+      "year": 2026,
+      "type": "folder",
+      "category": "الكامل",
+      "unit": "",
+      "description": "مجلد الكامل 2026 للصناعي.",
+      "url": "https://drive.google.com/drive/folders/1sYXvPbSCuYFIrFUoCuj0eAORsBzP-uqt",
+      "tags": [
+        "الكامل",
+        "2026"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "entrepreneurial-matrices",
+      "title": "كراسة الكامل - الريادي 2026: المصفوفات",
+      "subject": "الرياضيات",
+      "branch": "entrepreneurial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "المصفوفات",
+      "description": "كراسة المصفوفات.",
+      "url": "https://drive.google.com/file/d/1LC-86UcVyK_FTnTCsyoOW3RCm44wUepd/view?usp=drivesdk",
+      "tags": [
+        "ريادي",
+        "مصفوفات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "entrepreneurial-diff",
+      "title": "كراسة الكامل - الريادي 2026: التفاضل",
+      "subject": "الرياضيات",
+      "branch": "entrepreneurial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "التفاضل",
+      "description": "كراسة التفاضل.",
+      "url": "https://drive.google.com/file/d/15159IbkUjG2B2JtuD-_BbL3LF3UqEUR5/view?usp=drivesdk",
+      "tags": [
+        "ريادي",
+        "تفاضل"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "entrepreneurial-stats",
+      "title": "كراسة الكامل - الريادي 2026: الإحصاء",
+      "subject": "الرياضيات",
+      "branch": "entrepreneurial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "الإحصاء",
+      "description": "كراسة الإحصاء.",
+      "url": "https://drive.google.com/file/d/1nztfU760bCRmiT50X9qYhH6JgUH9PD-7/view?usp=drivesdk",
+      "tags": [
+        "ريادي",
+        "إحصاء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "entrepreneurial-integral",
+      "title": "كراسة الكامل - الريادي 2026: التكامل",
+      "subject": "الرياضيات",
+      "branch": "entrepreneurial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "التكامل",
+      "description": "كراسة التكامل.",
+      "url": "https://drive.google.com/file/d/1r0_NRTJEHsmjmQhsRPl5sNUfSAl7BdF3/view?usp=drivesdk",
+      "tags": [
+        "ريادي",
+        "تكامل"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "entrepreneurial-finance",
+      "title": "كراسة الكامل - الريادي 2026: الرياضيات المالية",
+      "subject": "الرياضيات",
+      "branch": "entrepreneurial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "الرياضيات المالية",
+      "description": "كراسة الرياضيات المالية.",
+      "url": "https://drive.google.com/file/d/1CCo2Qik6It4XViXNTPc2h6gP8dHp79D3/view?usp=drivesdk",
+      "tags": [
+        "ريادي",
+        "رياضيات مالية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "scientific-diff",
+      "title": "كراسة الكامل - العلمي 2026: التفاضل",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "التفاضل",
+      "description": "كراسة التفاضل.",
+      "url": "https://drive.google.com/file/d/1f0HO2uq2HhvjMqX7wyl1SuO3SO0bvuRL/view?usp=drivesdk",
+      "tags": [
+        "علمي",
+        "تفاضل"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "scientific-diff-app",
+      "title": "كراسة الكامل - العلمي 2026: تطبيقات التفاضل",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "تطبيقات التفاضل",
+      "description": "كراسة تطبيقات التفاضل.",
+      "url": "https://drive.google.com/file/d/1bkuTbcVaetsyfc9VP-ET33cySs6NkPGk/view?usp=drivesdk",
+      "tags": [
+        "علمي",
+        "تفاضل"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "scientific-matrices",
+      "title": "كراسة الكامل - العلمي 2026: المصفوفات",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "المصفوفات",
+      "description": "كراسة المصفوفات.",
+      "url": "https://drive.google.com/file/d/1FGeeu8FlsBFXdWMD0LZ4uxhvbthgFgf1/view?usp=drivesdk",
+      "tags": [
+        "علمي",
+        "مصفوفات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "scientific-indef-integral",
+      "title": "كراسة الكامل - العلمي 2026: التكامل غير المحدود",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "التكامل غير المحدود",
+      "description": "كراسة التكامل غير المحدود.",
+      "url": "https://drive.google.com/file/d/1ZVfbCV5ALwyKKsqtRPPcJe30s_EiVula/view?usp=drivesdk",
+      "tags": [
+        "علمي",
+        "تكامل"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "scientific-def-integral",
+      "title": "كراسة الكامل - العلمي 2026: التكامل المحدود",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "التكامل المحدود",
+      "description": "كراسة التكامل المحدود.",
+      "url": "https://drive.google.com/file/d/1EjKXmwu2NIoMUEUHH2hRaOfonzwT4zBR/view?usp=drivesdk",
+      "tags": [
+        "علمي",
+        "تكامل"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-calculus",
+      "title": "كراسة الكامل - أدبي وشرعي 2026: التفاضل والتكامل",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "التفاضل والتكامل",
+      "description": "كراسة للتفاضل والتكامل للأدبي والشرعي.",
+      "url": "https://drive.google.com/file/d/1pQJWgsZtFOAFASS2DAGXTtdJtoT3s5G_/view?usp=drivesdk",
+      "tags": [
+        "أدبي",
+        "شرعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-matrices",
+      "title": "كراسة الكامل - أدبي وشرعي 2026: المصفوفات",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "المصفوفات",
+      "description": "كراسة المصفوفات للأدبي والشرعي.",
+      "url": "https://drive.google.com/file/d/1U3Z9apa1R1052SqWl-9i0OFyvuuBV_Wq/view?usp=drivesdk",
+      "tags": [
+        "أدبي",
+        "شرعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-equations",
+      "title": "كراسة الكامل - أدبي وشرعي 2026: المعادلات والمتسلسلات",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "المعادلات والمتسلسلات",
+      "description": "كراسة المعادلات والمتسلسلات.",
+      "url": "https://drive.google.com/file/d/1j-KV5H_ZxDCe0mu5GgnQgC2r83b5NSIF/view?usp=drivesdk",
+      "tags": [
+        "أدبي",
+        "شرعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-stats",
+      "title": "كراسة الكامل - أدبي وشرعي 2026: الإحصاء",
+      "subject": "الرياضيات",
+      "branch": "all",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "الإحصاء",
+      "description": "كراسة الإحصاء.",
+      "url": "https://drive.google.com/file/d/1tqtfDrX2J92vjBjVTif1jk6_-kVD-hxB/view?usp=drivesdk",
+      "tags": [
+        "أدبي",
+        "شرعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "industrial-u1-2",
+      "title": "كراسة الكامل - الصناعي 2026: الوحدة الأولى والثانية",
+      "subject": "عام",
+      "branch": "industrial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "الوحدة الأولى والثانية",
+      "description": "كراسة الوحدتين الأولى والثانية.",
+      "url": "https://drive.google.com/file/d/1n7ZHdPdb19oKbPYGDHJmf6hWhCWo5ml6/view?usp=drivesdk",
+      "tags": [
+        "صناعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "industrial-u3",
+      "title": "كراسة الكامل - الصناعي 2026: الوحدة الثالثة",
+      "subject": "عام",
+      "branch": "industrial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "الوحدة الثالثة",
+      "description": "كراسة الوحدة الثالثة.",
+      "url": "https://drive.google.com/file/d/1YIPlR63KOPknlOeEt3W7g84yg75n-nsT/view?usp=drivesdk",
+      "tags": [
+        "صناعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "industrial-u4",
+      "title": "كراسة الكامل - الصناعي 2026: الوحدة الرابعة",
+      "subject": "عام",
+      "branch": "industrial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "الوحدة الرابعة",
+      "description": "كراسة الوحدة الرابعة.",
+      "url": "https://drive.google.com/file/d/1BZkVNvtO0iSnUMpWsQxBtL5Y27eMHQRO/view?usp=drivesdk",
+      "tags": [
+        "صناعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "industrial-u5",
+      "title": "كراسة الكامل - الصناعي 2026: الوحدة الخامسة",
+      "subject": "عام",
+      "branch": "industrial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "كراسة الكامل",
+      "unit": "الوحدة الخامسة",
+      "description": "كراسة الوحدة الخامسة.",
+      "url": "https://drive.google.com/file/d/1P8DKMp6ixeW92Z5mLoHP9lgJOrKtvB9s/view?usp=drivesdk",
+      "tags": [
+        "صناعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-min-scientific-p2",
+      "title": "مجمع الكامل للاختبارات الوزارية - العلمي الورقة الثانية",
+      "subject": "عام",
+      "branch": "scientific",
+      "year": 2026,
+      "type": "pdf",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجمع اختبارات وزارية للعلمي، الورقة الثانية.",
+      "url": "https://drive.google.com/file/d/13FLqobtDa4hGbTJf88h9XqCybhjnIDik/view?usp=drivesdk",
+      "tags": [
+        "وزاري",
+        "علمي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-min-scientific-p1",
+      "title": "مجمع الكامل للاختبارات الوزارية - العلمي الورقة الأولى",
+      "subject": "عام",
+      "branch": "scientific",
+      "year": 2026,
+      "type": "pdf",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجمع اختبارات وزارية للعلمي، الورقة الأولى.",
+      "url": "https://drive.google.com/file/d/1G6fmpmiyc-Z57M4zh_b8bEY8tqu5hIBl/view?usp=drivesdk",
+      "tags": [
+        "وزاري",
+        "علمي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-min-lit-sharia",
+      "title": "مجمع الكامل للاختبارات الوزارية - الأدبي والشرعي",
+      "subject": "عام",
+      "branch": "all",
+      "year": 2026,
+      "type": "pdf",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجمع اختبارات وزارية للأدبي والشرعي.",
+      "url": "https://drive.google.com/file/d/11H-RzAu0njfA2s63l6vlGMQi4cj-RAlu/view?usp=drivesdk",
+      "tags": [
+        "وزاري",
+        "أدبي",
+        "شرعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-min-industrial",
+      "title": "مجمع الكامل للاختبارات الوزارية - الصناعي",
+      "subject": "عام",
+      "branch": "industrial",
+      "year": 2026,
+      "type": "pdf",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجمع اختبارات وزارية للصناعي.",
+      "url": "https://drive.google.com/file/d/1Xx2-iX8lu2VQJ2IUFN2vhYhEml7fi_16/view?usp=drivesdk",
+      "tags": [
+        "وزاري",
+        "صناعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "full-min-commercial-entrepreneurial",
+      "title": "مجمع الكامل للاختبارات الوزارية - التجاري / الريادي",
+      "subject": "عام",
+      "branch": "all",
+      "year": 2026,
+      "type": "pdf",
+      "category": "وزاري",
+      "unit": "",
+      "description": "مجمع اختبارات وزارية للتجاري والريادي.",
+      "url": "https://drive.google.com/file/d/1wDegWK8ZeLQpTRAfMCinm4YyowGFPXeV/view?usp=drivesdk",
+      "tags": [
+        "وزاري",
+        "تجاري",
+        "ريادي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-mock-2025-scientific",
+      "title": "الاختبارات التجريبية 2025 - الرياضيات - علمي",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": 2025,
+      "type": "pdf",
+      "category": "تجريبي",
+      "unit": "",
+      "description": "اختبار تجريبي للرياضيات للفرع العلمي.",
+      "url": "https://drive.google.com/file/d/17lgpRcGe5PIwWJwRbGsqvYyaXYr-LK9S/view?usp=drivesdk",
+      "tags": [
+        "تجريبي",
+        "علمي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-mock-2025-literary",
+      "title": "الاختبارات التجريبية 2025 - الرياضيات - أدبي",
+      "subject": "الرياضيات",
+      "branch": "literary",
+      "year": 2025,
+      "type": "pdf",
+      "category": "تجريبي",
+      "unit": "",
+      "description": "اختبار تجريبي للرياضيات للفرع الأدبي.",
+      "url": "https://drive.google.com/file/d/1JbIFDdpPOkwsdPYSqS6zJDY395ND2ZpB/view?usp=drivesdk",
+      "tags": [
+        "تجريبي",
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-mock-2025-industrial",
+      "title": "الاختبارات التجريبية 2025 - الرياضيات - صناعي",
+      "subject": "الرياضيات",
+      "branch": "industrial",
+      "year": 2025,
+      "type": "pdf",
+      "category": "تجريبي",
+      "unit": "",
+      "description": "اختبار تجريبي للرياضيات للصناعي.",
+      "url": "https://drive.google.com/file/d/1_wWOeDwe0GyizcXXWK1-kzDARmiXmKwl/view?usp=drivesdk",
+      "tags": [
+        "تجريبي",
+        "صناعي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "math-mock-2025-home",
+      "title": "اقتصاد منزلي وزاري - رياضيات",
+      "subject": "الرياضيات",
+      "branch": "home-economics",
+      "year": 2025,
+      "type": "pdf",
+      "category": "وزاري",
+      "unit": "",
+      "description": "ملف مخصص للاقتصاد المنزلي.",
+      "url": "https://drive.google.com/file/d/1LltvSzhJ31k3qlm2fBqshy9I5OPrmpfY/view?usp=drivesdk",
+      "tags": [
+        "اقتصاد منزلي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "literary-library",
+      "title": "مكتبة شاملة - توجيهي 2026 غزة",
+      "subject": "عام",
+      "branch": "literary",
+      "year": 2026,
+      "type": "external",
+      "category": "مكتبة شاملة",
+      "unit": "",
+      "description": "مكتبة شاملة للمواد والمصادر.",
+      "url": "https://anaspal.github.io/tawjihi-2026-gaza/",
+      "tags": [
+        "أدبي",
+        "مكتبة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "all-branches-links",
+      "title": "جميع الروابط لجميع الفروع",
+      "subject": "عام",
+      "branch": "all",
+      "year": 2026,
+      "type": "pdf",
+      "category": "مجمع روابط",
+      "unit": "",
+      "description": "ملف يجمع روابط لجميع الفروع.",
+      "url": "https://drive.google.com/file/d/13NbFluRyMysR6W5UteBEg-MOMBxrmL-G/view?usp=drivesdk",
+      "tags": [
+        "فروع",
+        "روابط"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "packs-answers",
+      "title": "الرزم وإجاباتها",
+      "subject": "عام",
+      "branch": "all",
+      "year": 2026,
+      "type": "folder",
+      "category": "رزم وإجابات",
+      "unit": "",
+      "description": "مجلد الرزم وإجاباتها.",
+      "url": "https://drive.google.com/drive/folders/1xDE0WvPSJSRL8jOL4b4Y1OUWNOruZTE",
+      "tags": [
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "textbooks-answers",
+      "title": "الكتب المدرسية وإجاباتها",
+      "subject": "عام",
+      "branch": "all",
+      "year": 2026,
+      "type": "folder",
+      "category": "كتب",
+      "unit": "",
+      "description": "مجلد الكتب المدرسية وإجاباتها.",
+      "url": "https://drive.google.com/drive/folders/1D-MDu6FiLFpNGBRewe_Bj5vm-L4d1C-7",
+      "tags": [
+        "كتب"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tal3-1",
+      "title": "مجمع 1 - مكتبة المتألق",
+      "subject": "عام",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجمع ملفات أدبي.",
+      "url": "https://drive.google.com/drive/folders/1_6aYYoWdM3rOt1zSSQhLTdXJHzd3-7O5",
+      "tags": [
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-files-2",
+      "title": "مجمع 2 - ملفات الأدبي",
+      "subject": "عام",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجمع ملفات للأدبي.",
+      "url": "https://drive.google.com/drive/mobile/folders/1acYLT1EV09ZoNHXHInSaYL9umg2t2_y1/1SM2pv3JaBKtht2UaCTR-Bz-jfarfb4X9",
+      "tags": [
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-geography-folder",
+      "title": "الجغرافيا - ملفات الأدبي",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجلد الجغرافيا.",
+      "url": "https://drive.google.com/drive/folders/1_12OBQt8-Gj32o1Fh_sKyMsp2S-ecj4A",
+      "tags": [
+        "جغرافيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-history-folder",
+      "title": "التاريخ - ملفات الأدبي",
+      "subject": "التاريخ",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجلد التاريخ.",
+      "url": "https://drive.google.com/drive/folders/1j31uAkPgE5GTsej9T9TGIwlBw7ggBzam",
+      "tags": [
+        "تاريخ"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-culture-folder",
+      "title": "الثقافة - ملفات الأدبي",
+      "subject": "الثقافة",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجلد الثقافة.",
+      "url": "https://drive.google.com/drive/folders/1DJx8eNJ2VTGiAagyk9F98FB2EYdM0jOX",
+      "tags": [
+        "ثقافة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-math-folder",
+      "title": "الرياضيات - ملفات الأدبي",
+      "subject": "الرياضيات",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجلد الرياضيات.",
+      "url": "https://drive.google.com/drive/folders/1vBEWUW7Ds7T0_xhHud-ME3M__sxzcyr5",
+      "tags": [
+        "رياضيات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-arabic2",
+      "title": "عربي 2 - ملفات الأدبي",
+      "subject": "اللغة العربية",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجلد عربي 2.",
+      "url": "https://drive.google.com/drive/folders/1L2-YceWFzD-8vK2T1ADhgNx5VKAsko3A",
+      "tags": [
+        "عربي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-english2",
+      "title": "إنجليزي 2 - ملفات الأدبي",
+      "subject": "اللغة الإنجليزية",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجلد إنجليزي 2.",
+      "url": "https://drive.google.com/drive/folders/1s9f5efDzXtl8d13nEMVYTwH-0drZHOaV",
+      "tags": [
+        "إنجليزي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-religion",
+      "title": "دين - ملفات الأدبي",
+      "subject": "التربية الإسلامية",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجلد الدين.",
+      "url": "https://drive.google.com/drive/folders/10LZ_uu607ciTvqQ_pcHOEskKVh93I1Cv",
+      "tags": [
+        "دين"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "lit-tech",
+      "title": "تكنولوجيا - ملفات الأدبي",
+      "subject": "التكنولوجيا",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "مكتبة",
+      "unit": "",
+      "description": "مجلد التكنولوجيا.",
+      "url": "https://drive.google.com/drive/folders/1cRjS7720o280cuBFcGkN_9IWOgfiGhLY",
+      "tags": [
+        "تكنولوجيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "literary-classification",
+      "title": "تصنيف الفرع الأدبي",
+      "subject": "عام",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "تصنيف",
+      "unit": "",
+      "description": "مجلد لتصنيف مصادر الفرع الأدبي.",
+      "url": "https://drive.google.com/drive/folders/1JBa5WTy4QuydAWlyJxxX-tX4bKwRhTav",
+      "tags": [
+        "أدبي",
+        "تصنيف"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "question-bank-lit",
+      "title": "بنك الأسئلة - الأدبي",
+      "subject": "عام",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "بنك أسئلة",
+      "unit": "",
+      "description": "بنك أسئلة للفرع الأدبي.",
+      "url": "https://drive.google.com/drive/mobile/folders/1f9WiJMNJdiWbzyvnlHfLsciOS9VdH-r-",
+      "tags": [
+        "بنك أسئلة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-almunqith",
+      "title": "دوسية المنقذ - جغرافيا",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": 2026,
+      "type": "folder",
+      "category": "دوسية",
+      "unit": "",
+      "description": "دوسية جغرافيا.",
+      "url": "https://drive.google.com/drive/folders/1jF2Z_Ba_KYyRpjz2YU6BJOfJ2W8jC2CT",
+      "tags": [
+        "جغرافيا",
+        "دوسية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-muannis",
+      "title": "دوسية المؤنس - جغرافيا",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": 2026,
+      "type": "pdf",
+      "category": "دوسية",
+      "unit": "",
+      "description": "دوسية جغرافيا.",
+      "url": "https://drive.google.com/file/d/1zTaCfTgwS5ynt3ZbGbcCpTAgc_29-yXa/view?usp=drivesdk",
+      "tags": [
+        "جغرافيا",
+        "دوسية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-student",
+      "title": "دوسية طالبة - جغرافيا",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": 2026,
+      "type": "pdf",
+      "category": "دوسية",
+      "unit": "",
+      "description": "دوسية جغرافيا.",
+      "url": "https://drive.google.com/file/d/1TndsxjLVQFTyCYnhJbUVROh82QHF_Omr/view?usp=drivesdk",
+      "tags": [
+        "جغرافيا",
+        "دوسية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-notebook",
+      "title": "دفتر طالب - جغرافيا",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": 2026,
+      "type": "pdf",
+      "category": "دفتر",
+      "unit": "",
+      "description": "دفتر طالب لمادة الجغرافيا.",
+      "url": "https://drive.google.com/file/d/1QB8TW0UwBriv7fTSZWn0h9trLRzCR5eV/view?usp=drivesdk",
+      "tags": [
+        "جغرافيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-summary",
+      "title": "تلخيص - جغرافيا",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": 2026,
+      "type": "pdf",
+      "category": "ملخص",
+      "unit": "",
+      "description": "تلخيص لمادة الجغرافيا.",
+      "url": "https://drive.google.com/file/d/1iTrAYFFPbCS3YGvDQQEA6DF9DUbPz2AK/view?usp=drivesdk",
+      "tags": [
+        "جغرافيا",
+        "ملخص"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "english-unit-tests",
+      "title": "امتحانات إلكترونية على كل وحدة - إنجليزي",
+      "subject": "اللغة الإنجليزية",
+      "branch": "all",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "كل الوحدات",
+      "description": "مستند يضم اختبارات إلكترونية على الوحدات.",
+      "url": "https://docs.google.com/document/d/1-TjPKIr3dTsYw-ni9Fxk2c_RO0vCgk7_f6kElWPhN28/edit?usp=drivesdk",
+      "tags": [
+        "إنجليزي",
+        "Google Docs"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "english-shady-tests",
+      "title": "امتحانات إلكترونية أستاذ شادي عمرو",
+      "subject": "اللغة الإنجليزية",
+      "branch": "all",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "",
+      "description": "مستند اختبارات إلكترونية.",
+      "url": "https://docs.google.com/document/d/1DyhCyIxMXzjNgqLOTKUEjczVipILRy3F62FrHb6TN4c/edit?usp=drivesdk",
+      "tags": [
+        "إنجليزي",
+        "Google Docs"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "english-grammar-tests",
+      "title": "امتحانات إلكترونية على القواعد والكلمات",
+      "subject": "اللغة الإنجليزية",
+      "branch": "all",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "القواعد والكلمات",
+      "description": "اختبارات إلكترونية على القواعد والكلمات.",
+      "url": "https://docs.google.com/document/d/1Kl_7OcKpEo34rom0elQD1bgKPnsoaT_QQKzJQpgGMHs/edit?usp=drivesdk",
+      "tags": [
+        "إنجليزي",
+        "قواعد",
+        "كلمات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "english-jenin",
+      "title": "امتحانات إلكترونية من لجنة الإنجليزي جنين",
+      "subject": "اللغة الإنجليزية",
+      "branch": "all",
+      "year": null,
+      "type": "pdf",
+      "category": "اختبار إلكتروني",
+      "unit": "",
+      "description": "ملف أسئلة واختبارات.",
+      "url": "https://drive.google.com/file/d/1hsXlwU7ERGOqitP2WTj4TnWKLOq7laeH/view?usp=drivesdk",
+      "tags": [
+        "إنجليزي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "english-more-tests",
+      "title": "امتحانات إلكترونية أخرى - إنجليزي",
+      "subject": "اللغة الإنجليزية",
+      "branch": "all",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "",
+      "description": "مستند اختبارات إلكترونية.",
+      "url": "https://docs.google.com/document/d/1JjVKg9gkLO5DctFpYQ3gBDSAqGJN8y_nP3Ddxh8UNpQ/edit?usp=drivesdk",
+      "tags": [
+        "إنجليزي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "english-past-pdf",
+      "title": "ملفات PDF أسئلة وزاري سابق - إنجليزي",
+      "subject": "اللغة الإنجليزية",
+      "branch": "all",
+      "year": null,
+      "type": "folder",
+      "category": "وزاري سابق",
+      "unit": "",
+      "description": "مجلد ملفات PDF لأسئلة وزارية سابقة.",
+      "url": "https://drive.google.com/drive/folders/1pat4uoaNiEZnjKYapkqLKCApj4Vd6HD_",
+      "tags": [
+        "إنجليزي",
+        "وزاري"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "arabic-form",
+      "title": "اختبار لغة عربية",
+      "subject": "اللغة العربية",
+      "branch": "all",
+      "year": null,
+      "type": "form",
+      "category": "اختبار إلكتروني",
+      "unit": "",
+      "description": "Google Form لاختبار اللغة العربية.",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfRq5qeoeNNI8zq_HODvdf_pAqyIYOfBm0CGXLb3BYLJAyEIw/viewform?usp=header",
+      "tags": [
+        "عربي",
+        "Google Forms"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "arabic-pdf-choose",
+      "title": "ملف PDF اختر - عربي",
+      "subject": "اللغة العربية",
+      "branch": "all",
+      "year": null,
+      "type": "pdf",
+      "category": "تدريب",
+      "unit": "",
+      "description": "ملف تدريب PDF.",
+      "url": "https://drive.google.com/file/d/1hnltmDoKKsFZU8zVHyzabXPASSVVCXNl/view?usp=drivesdk",
+      "tags": [
+        "عربي",
+        "PDF"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "arabic-firas-review",
+      "title": "مراجعة اختر وأكمل - عربي",
+      "subject": "اللغة العربية",
+      "branch": "all",
+      "year": null,
+      "type": "pdf",
+      "category": "مراجعة",
+      "unit": "",
+      "description": "مراجعة PDF.",
+      "url": "https://drive.google.com/file/d/141s0RmrBPz67pYgSXqNg5OYOJI103qH1/view?usp=drivesdk",
+      "tags": [
+        "عربي",
+        "مراجعة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "religion-unit-tests",
+      "title": "امتحانات إلكترونية على كل وحدة - دين",
+      "subject": "التربية الإسلامية",
+      "branch": "all",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "كل الوحدات",
+      "description": "اختبارات إلكترونية على كل وحدة.",
+      "url": "https://docs.google.com/document/d/1QdeAnwXQDMQPfXNqubJQpp7lIZ7F29_vIesxWqwLHeE/edit?usp=drivesdk",
+      "tags": [
+        "دين",
+        "Google Docs"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "religion-lesson-tests",
+      "title": "امتحانات إلكترونية على كل درس - دين",
+      "subject": "التربية الإسلامية",
+      "branch": "all",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "كل الدروس",
+      "description": "اختبارات إلكترونية على كل درس.",
+      "url": "https://docs.google.com/document/d/1PmwfP9lYGpNUlUYR7EVZmCL_APMPpQ2aidSfRdJUi40/edit?usp=drivesdk",
+      "tags": [
+        "دين",
+        "Google Docs"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "religion-first-ten",
+      "title": "امتحانات إلكترونية أول عشر دروس - دين",
+      "subject": "التربية الإسلامية",
+      "branch": "all",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "أول عشر دروس",
+      "description": "اختبارات إلكترونية لأول عشر دروس.",
+      "url": "https://docs.google.com/document/d/13W5QbSYPmiALPY0UE9h9Yp-RAZHOXlwfRG_1UPHpl8Y/edit?usp=drivesdk",
+      "tags": [
+        "دين"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "religion-pdf-choose",
+      "title": "كراسة PDF كلها اختر - دين",
+      "subject": "التربية الإسلامية",
+      "branch": "all",
+      "year": null,
+      "type": "pdf",
+      "category": "تدريب",
+      "unit": "",
+      "description": "كراسة PDF.",
+      "url": "https://drive.google.com/file/d/1iDxTtU9RNVpog1FYgKzqAebjVUEPQG2q/view?usp=drivesdk",
+      "tags": [
+        "دين"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "religion-dosya",
+      "title": "دوسية PDF اختر - دين",
+      "subject": "التربية الإسلامية",
+      "branch": "all",
+      "year": null,
+      "type": "pdf",
+      "category": "دوسية",
+      "unit": "",
+      "description": "دوسية PDF.",
+      "url": "https://drive.google.com/file/d/1Lx4cEX0Ouat-zdPFemp_v_rnw_OraWYh/view?usp=drivesdk",
+      "tags": [
+        "دين",
+        "دوسية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tech-scientific-dosya",
+      "title": "دوسية PDF اختر - تكنولوجيا علمي",
+      "subject": "التكنولوجيا",
+      "branch": "scientific",
+      "year": null,
+      "type": "pdf",
+      "category": "دوسية",
+      "unit": "",
+      "description": "دوسية تكنولوجيا علمي.",
+      "url": "https://drive.google.com/file/d/1iK7StjdWVgw-xPbrTMUnqnZAxL0_qQRf/view?usp=drivesdk",
+      "tags": [
+        "تكنولوجيا",
+        "علمي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tech-scientific-questions",
+      "title": "أسئلة PDF - تكنولوجيا علمي",
+      "subject": "التكنولوجيا",
+      "branch": "scientific",
+      "year": null,
+      "type": "pdf",
+      "category": "أسئلة",
+      "unit": "",
+      "description": "ملف أسئلة PDF.",
+      "url": "https://drive.google.com/file/d/10K8c-4UzlO16SS2Yrw5cdC20W3PvuLZm/view?usp=drivesdk",
+      "tags": [
+        "تكنولوجيا",
+        "علمي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tech-scientific-review",
+      "title": "مراجعة مهمة - تكنولوجيا علمي",
+      "subject": "التكنولوجيا",
+      "branch": "scientific",
+      "year": null,
+      "type": "pdf",
+      "category": "مراجعة",
+      "unit": "",
+      "description": "مراجعة مهمة.",
+      "url": "https://drive.google.com/file/d/1iMuw-mfZ-VnZcMeCoD1tvQiEUUcFiTv7/view?usp=drivesdk",
+      "tags": [
+        "تكنولوجيا",
+        "مراجعة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tech-literary-bank",
+      "title": "بنك الأسئلة - تكنولوجيا أدبي",
+      "subject": "التكنولوجيا",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "بنك أسئلة",
+      "unit": "",
+      "description": "بنك أسئلة تكنولوجيا أدبي.",
+      "url": "https://drive.google.com/file/d/1ih6BQXZmb1eskLVzjvL1MGQVarZX0g3z/view?usp=drivesdk",
+      "tags": [
+        "تكنولوجيا",
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tech-literary-material-1",
+      "title": "مادة تدريبية - تكنولوجيا أدبي 1",
+      "subject": "التكنولوجيا",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "تدريب",
+      "unit": "",
+      "description": "مادة تدريبية.",
+      "url": "https://drive.google.com/file/d/1ieYjKAf2-SGmSnY_6lGo-0bw6aERnmBD/view?usp=drivesdk",
+      "tags": [
+        "تكنولوجيا",
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tech-literary-material-2",
+      "title": "مادة تدريبية - تكنولوجيا أدبي 2",
+      "subject": "التكنولوجيا",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "تدريب",
+      "unit": "",
+      "description": "مادة تدريبية.",
+      "url": "https://drive.google.com/file/d/1hlm_yBER6ewTgtcsRrWPJ5TRkI6SRDa3/view?usp=drivesdk",
+      "tags": [
+        "تكنولوجيا",
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tech-literary-review",
+      "title": "مراجعة مهمة - تكنولوجيا أدبي",
+      "subject": "التكنولوجيا",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "مراجعة",
+      "unit": "",
+      "description": "مراجعة مهمة.",
+      "url": "https://drive.google.com/file/d/1id0vV9DjprmiW-9zUaKkYHJy_iK5nyBk/view?usp=drivesdk",
+      "tags": [
+        "تكنولوجيا",
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "history-unit1-form",
+      "title": "امتحان الوحدة الأولى - تاريخ",
+      "subject": "التاريخ",
+      "branch": "literary",
+      "year": null,
+      "type": "form",
+      "category": "اختبار إلكتروني",
+      "unit": "الوحدة الأولى",
+      "description": "Google Form لاختبار الوحدة الأولى.",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSe2_CBc9glNszZF5OeaaFBlzfCfnrvxrbiWr3qdtvgPR_Tldw/viewform?usp=sf_link",
+      "tags": [
+        "تاريخ",
+        "Forms"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "history-lessons-folder",
+      "title": "امتحان على كل درس - تاريخ",
+      "subject": "التاريخ",
+      "branch": "literary",
+      "year": null,
+      "type": "folder",
+      "category": "اختبار إلكتروني",
+      "unit": "كل الدروس",
+      "description": "مجلد اختبارات على كل درس.",
+      "url": "https://drive.google.com/drive/folders/1WhNAHMmXDsl9negkM0wxtGnbr7kTwmVF",
+      "tags": [
+        "تاريخ"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "history-units-folder",
+      "title": "امتحان على كل وحدة - تاريخ",
+      "subject": "التاريخ",
+      "branch": "literary",
+      "year": null,
+      "type": "folder",
+      "category": "اختبار إلكتروني",
+      "unit": "كل الوحدات",
+      "description": "مجلد اختبارات على كل وحدة.",
+      "url": "https://drive.google.com/drive/folders/1x82zIIITOrebha6tPYMZmzzGrvWoPHIR",
+      "tags": [
+        "تاريخ"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "history-choose-1",
+      "title": "دوسية اختر PDF - تاريخ 1",
+      "subject": "التاريخ",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "دوسية",
+      "unit": "",
+      "description": "دوسية اختر PDF.",
+      "url": "https://drive.google.com/file/d/1kBgG8VIawiAvLlwCmGKXGaS41GcIiGv8/view?usp=drivesdk",
+      "tags": [
+        "تاريخ"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "history-choose-2",
+      "title": "دوسية اختر PDF - تاريخ 2",
+      "subject": "التاريخ",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "دوسية",
+      "unit": "",
+      "description": "دوسية اختر PDF.",
+      "url": "https://drive.google.com/file/d/1jrzZATT8-hjalSQhIXLUh_9lw_zJHgYG/view?usp=drivesdk",
+      "tags": [
+        "تاريخ"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-question-bank-pdf",
+      "title": "بنك أسئلة PDF - جغرافيا",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "بنك أسئلة",
+      "unit": "",
+      "description": "بنك أسئلة PDF.",
+      "url": "https://drive.google.com/file/d/12M6zXm3DrY77S8XuodQ1frAnHFxsQ_nZ/view?usp=drivesdk",
+      "tags": [
+        "جغرافيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-comprehensive",
+      "title": "اختر شامل - جغرافيا",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "تدريب",
+      "unit": "",
+      "description": "ملف اختر شامل.",
+      "url": "https://drive.google.com/file/d/16Om3u4KKvtDPtGmGFbYI6Gaksb1SR70f/view?usp=drivesdk",
+      "tags": [
+        "جغرافيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-east-gaza",
+      "title": "اختر دوسية العودة - مديرية شرق غزة",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "دوسية",
+      "unit": "",
+      "description": "دوسية العودة.",
+      "url": "https://drive.google.com/file/d/1kdt7lZ1qYapFvczlaWjYWziGwiT6a9pU/view?usp=drivesdk",
+      "tags": [
+        "جغرافيا",
+        "شرق غزة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "geo-first-term",
+      "title": "اختر على الفصل الأول - جغرافيا",
+      "subject": "الجغرافيا",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "تدريب",
+      "unit": "الفصل الأول",
+      "description": "ملف تدريب على الفصل الأول.",
+      "url": "https://drive.google.com/file/d/1a0nYMaObCgwPueEdT1YoPAojUWK0U6nH/view?usp=drivesdk",
+      "tags": [
+        "جغرافيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "culture-choose",
+      "title": "اختر PDF - ثقافة",
+      "subject": "الثقافة",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "تدريب",
+      "unit": "",
+      "description": "ملف اختر PDF.",
+      "url": "https://drive.google.com/file/d/1kxC5yuS0HXxkKSD02HbJL1scG_uvpbNm/view?usp=drivesdk",
+      "tags": [
+        "ثقافة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "culture-solved",
+      "title": "أسئلة إثرائية محلولة - ثقافة",
+      "subject": "الثقافة",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "إثرائي",
+      "unit": "",
+      "description": "أسئلة إثرائية محلولة.",
+      "url": "https://drive.google.com/file/d/1HlDZ7EwKkv_gpLIRF_vMCN1Ot2VieEKN/view?usp=drivesdk",
+      "tags": [
+        "ثقافة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "scientific-math-tests",
+      "title": "اختبارات إلكترونية - رياضيات علمي",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": null,
+      "type": "pdf",
+      "category": "اختبار إلكتروني",
+      "unit": "",
+      "description": "اختبارات إلكترونية للرياضيات العلمي.",
+      "url": "https://drive.google.com/file/d/1Lbl64Yfsno-o9BvJrlbstKcsgWBa3cC2/view?usp=drivesdk",
+      "tags": [
+        "رياضيات",
+        "علمي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "scientific-math-lesson-tests",
+      "title": "امتحانات إلكترونية على كل درس - رياضيات علمي",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "كل الدروس",
+      "description": "مستند اختبارات إلكترونية.",
+      "url": "https://docs.google.com/document/d/1mqSOEu6lRt7TAE1GOryyTKFzCLwHYIwcZsK1_cIOQxQ/edit?usp=drivesdk",
+      "tags": [
+        "رياضيات",
+        "علمي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "scientific-math-unit-tests",
+      "title": "امتحانات إلكترونية على كل وحدة - رياضيات علمي",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "كل الوحدات",
+      "description": "مستند اختبارات إلكترونية.",
+      "url": "https://docs.google.com/document/d/1uYBJc6OAC6z9Z9g77TtmKHOpQ5fQ64M0CB-hyvh0S9g/edit?usp=drivesdk",
+      "tags": [
+        "رياضيات",
+        "علمي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "literary-math-training",
+      "title": "مادة تدريبية PDF - رياضيات أدبي",
+      "subject": "الرياضيات",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "تدريب",
+      "unit": "",
+      "description": "مادة تدريبية للرياضيات الأدبي.",
+      "url": "https://drive.google.com/file/d/1mkniCbY6szXl6nBE2sSGLkKhMSXh1XOh/view?usp=drivesdk",
+      "tags": [
+        "رياضيات",
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "literary-math-review",
+      "title": "مراجعة أهم الأسئلة - رياضيات أدبي",
+      "subject": "الرياضيات",
+      "branch": "literary",
+      "year": null,
+      "type": "pdf",
+      "category": "مراجعة",
+      "unit": "",
+      "description": "مراجعة لأهم الأسئلة.",
+      "url": "https://drive.google.com/file/d/1QYUkZbSJfyLi-1qZC80Y_URauuA43_On/view?usp=drivesdk",
+      "tags": [
+        "رياضيات",
+        "أدبي"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "literary-math-full-2025",
+      "title": "الكامل 2025 محلول - رياضيات أدبي",
+      "subject": "الرياضيات",
+      "branch": "literary",
+      "year": 2025,
+      "type": "folder",
+      "category": "الكامل",
+      "unit": "",
+      "description": "مجلد الكامل 2025 محلول.",
+      "url": "https://drive.google.com/drive/folders/1bjvqC9VdHT3Ez0_VYB1nm8UbQkzK7AG6",
+      "tags": [
+        "رياضيات",
+        "أدبي",
+        "2025"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "physics-online-tests",
+      "title": "امتحانات إلكترونية - فيزياء",
+      "subject": "الفيزياء",
+      "branch": "scientific",
+      "year": null,
+      "type": "document",
+      "category": "اختبار إلكتروني",
+      "unit": "",
+      "description": "مستند اختبارات إلكترونية للفيزياء.",
+      "url": "https://docs.google.com/document/d/1Koh5A0aTFhTPRUPH1hogpEU9mjPe23bs7J7DU2FM6SI/edit?usp=drivesdk",
+      "tags": [
+        "فيزياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "physics-question-files",
+      "title": "ملفات أسئلة - فيزياء",
+      "subject": "الفيزياء",
+      "branch": "scientific",
+      "year": null,
+      "type": "folder",
+      "category": "أسئلة",
+      "unit": "",
+      "description": "مجلد ملفات أسئلة الفيزياء.",
+      "url": "https://drive.google.com/drive/folders/1ijEgOiKmi2RmN-1PB3bXqCYevX3kh90G",
+      "tags": [
+        "فيزياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "physics-extra",
+      "title": "مادة إضافية - فيزياء",
+      "subject": "الفيزياء",
+      "branch": "scientific",
+      "year": null,
+      "type": "document",
+      "category": "مادة إضافية",
+      "unit": "",
+      "description": "مستند مادة إضافية.",
+      "url": "https://docs.google.com/document/d/11Sls2IHq4M1u0pfVNHEwvkX86SpW85DtsIV9q7OHvpw/edit?usp=drivesdk",
+      "tags": [
+        "فيزياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "chemistry-question-bank",
+      "title": "أسئلة اختر وأسئلة إثرائية - كيمياء",
+      "subject": "الكيمياء",
+      "branch": "scientific",
+      "year": null,
+      "type": "folder",
+      "category": "بنك أسئلة",
+      "unit": "",
+      "description": "مجلد أسئلة اختر وأسئلة إثرائية.",
+      "url": "https://drive.google.com/drive/folders/1j4jAI5o_FqkyIsgtL2ZuV1YG-_6QND84",
+      "tags": [
+        "كيمياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "biology-question-bank",
+      "title": "أسئلة اختر وأسئلة إثرائية - أحياء",
+      "subject": "الأحياء",
+      "branch": "scientific",
+      "year": null,
+      "type": "folder",
+      "category": "بنك أسئلة",
+      "unit": "",
+      "description": "مجلد أسئلة اختر وأسئلة إثرائية.",
+      "url": "https://drive.google.com/drive/folders/1jQns4IigB2Bxe1SUyMYMIXogdtY3p7Oj",
+      "tags": [
+        "أحياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "school-talaye3",
+      "title": "مدرسة الطلائع - نابلس",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "folder",
+      "category": "بنك أسئلة وامتحانات",
+      "unit": "",
+      "description": "ملف مدرسة الطلائع في نابلس، يحتوي على أسئلة وامتحانات لمواد متعددة.",
+      "url": "https://drive.google.com/drive/folders/15OuodgR5XA1PZ0lk7pWSLGMvaRHr3H5E",
+      "tags": [
+        "مدرسة الطلائع",
+        "نابلس"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "core-arabic-pack-form",
+      "title": "اختبار رزم المواد الأساسية - عربي",
+      "subject": "اللغة العربية",
+      "branch": "all",
+      "year": null,
+      "type": "form",
+      "category": "اختبار رزم",
+      "unit": "",
+      "description": "اختبار Google Forms مرتبط بالرزم.",
+      "url": "https://docs.google.com/forms/d/1Vv6gjfBTMfeAW-NPasMVAmAYGSAvJWDi3XhqrFGxkOA/edit?usp=drivesdk",
+      "tags": [
+        "عربي",
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "core-english-pack-form",
+      "title": "اختبار رزم المواد الأساسية - إنجليزي",
+      "subject": "اللغة الإنجليزية",
+      "branch": "all",
+      "year": null,
+      "type": "form",
+      "category": "اختبار رزم",
+      "unit": "",
+      "description": "اختبار Google Forms مرتبط بالرزم.",
+      "url": "https://docs.google.com/forms/d/1Vv6gjfBTMfeAW-NPasMVAmAYGSAvJWDi3XhqrFGxkOA/edit?usp=drivesdk",
+      "tags": [
+        "إنجليزي",
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "core-religion-pack-form",
+      "title": "اختبار رزم المواد الأساسية - دين",
+      "subject": "التربية الإسلامية",
+      "branch": "all",
+      "year": null,
+      "type": "form",
+      "category": "اختبار رزم",
+      "unit": "",
+      "description": "اختبار Google Forms مرتبط بالرزم.",
+      "url": "https://docs.google.com/forms/d/1Jxj8x58ubAQlkcIKbE1x_P8htkV839O4fKM7kYIhxIE/edit?usp=drivesdk",
+      "tags": [
+        "دين",
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "core-tech-pack-form",
+      "title": "اختبار رزم المواد الأساسية - تكنولوجيا جميع الأفرع عدا العلمي",
+      "subject": "التكنولوجيا",
+      "branch": "all",
+      "year": null,
+      "type": "form",
+      "category": "اختبار رزم",
+      "unit": "",
+      "description": "اختبار Google Forms للتكنولوجيا لجميع الأفرع عدا العلمي.",
+      "url": "https://docs.google.com/forms/d/1PZnSjX9RcNOcqzVjT7ekj4UaZMYl6r4kF5rOsozT89Y/edit?usp=drivesdk",
+      "tags": [
+        "تكنولوجيا",
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "pack-second-term",
+      "title": "اختر على الفصل الثاني",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "pdf",
+      "category": "اختبار رزم",
+      "unit": "الفصل الثاني",
+      "description": "ملف تدريب على الفصل الثاني.",
+      "url": "https://drive.google.com/file/d/1a-kgcHOHuEzhO9i5Cimw_bAc3hvTvDDw/view?usp=drivesdk",
+      "tags": [
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-arabic",
+      "title": "امتحانات إلكترونية حسب الرزم - عربي جميع الفروع",
+      "subject": "اللغة العربية",
+      "branch": "all",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13724",
+      "tags": [
+        "Telegram",
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-english",
+      "title": "امتحانات إلكترونية حسب الرزم - إنجليزي جميع الفروع",
+      "subject": "اللغة الإنجليزية",
+      "branch": "all",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13731",
+      "tags": [
+        "Telegram",
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-religion",
+      "title": "امتحانات إلكترونية حسب الرزم - دين جميع الفروع",
+      "subject": "التربية الإسلامية",
+      "branch": "all",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13738",
+      "tags": [
+        "Telegram",
+        "رزم"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-tech-lit-entre-sharia",
+      "title": "امتحانات إلكترونية حسب الرزم - تكنولوجيا أدبي وريادي وشرعي",
+      "subject": "التكنولوجيا",
+      "branch": "all",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13742",
+      "tags": [
+        "Telegram",
+        "تكنولوجيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-tech-science-industrial",
+      "title": "امتحانات إلكترونية حسب الرزم - تكنولوجيا علمي وصناعي",
+      "subject": "التكنولوجيا",
+      "branch": "all",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13745",
+      "tags": [
+        "Telegram",
+        "تكنولوجيا"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-chemistry",
+      "title": "امتحانات إلكترونية حسب الرزم - كيمياء",
+      "subject": "الكيمياء",
+      "branch": "scientific",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13748",
+      "tags": [
+        "Telegram",
+        "كيمياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-biology",
+      "title": "امتحانات إلكترونية حسب الرزم - أحياء",
+      "subject": "الأحياء",
+      "branch": "scientific",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13753",
+      "tags": [
+        "Telegram",
+        "أحياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-physics",
+      "title": "امتحانات إلكترونية حسب الرزم - فيزياء علمي وصناعي",
+      "subject": "الفيزياء",
+      "branch": "all",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13757",
+      "tags": [
+        "Telegram",
+        "فيزياء"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-math-scientific",
+      "title": "امتحانات إلكترونية حسب الرزم - رياضيات علمي",
+      "subject": "الرياضيات",
+      "branch": "scientific",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13767",
+      "tags": [
+        "Telegram",
+        "رياضيات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-math-literary",
+      "title": "امتحانات إلكترونية حسب الرزم - رياضيات أدبي",
+      "subject": "الرياضيات",
+      "branch": "literary",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/13772",
+      "tags": [
+        "Telegram",
+        "رياضيات"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-virtual-literary",
+      "title": "امتحانات إلكترونية من مدرسة غزة الافتراضية - ثاني عشر أدبي",
+      "subject": "عام",
+      "branch": "literary",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/12894",
+      "tags": [
+        "Telegram",
+        "غزة الافتراضية"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tg-all-branches",
+      "title": "امتحانات إلكترونية لكل الفروع",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "telegram",
+      "category": "Telegram",
+      "unit": "",
+      "description": "الرابط قد يتم تحديث محتواه وإضافة اختبارات جديدة.",
+      "url": "https://t.me/l2OO5ll/12778",
+      "tags": [
+        "Telegram",
+        "فروع"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "tawjehe-bot",
+      "title": "🤖 بوت توجيهي",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "telegram",
+      "category": "بوت تعليمي",
+      "unit": "",
+      "description": "بوت تعليمي على Telegram. لا يتم عرضه كاختبار داخلي.",
+      "url": "https://t.me/Tawjehefilebot",
+      "tags": [
+        "Telegram",
+        "بوت"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "general-question-bank",
+      "title": "بنك الأسئلة",
+      "subject": "عام",
+      "branch": "all",
+      "year": null,
+      "type": "folder",
+      "category": "بنك أسئلة",
+      "unit": "",
+      "description": "مجلد بنك أسئلة.",
+      "url": "https://drive.google.com/drive/folders/1-6g5ZmUzPebIH-2yt3dzSEm35UpigXRO",
+      "tags": [
+        "بنك أسئلة"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "chemistry-form",
+      "title": "اختبار كيمياء",
+      "subject": "الكيمياء",
+      "branch": "scientific",
+      "year": null,
+      "type": "form",
+      "category": "اختبار إلكتروني",
+      "unit": "",
+      "description": "Google Form للكيمياء.",
+      "url": "https://forms.gle/roQabMg2MSgXPhzw6",
+      "tags": [
+        "كيمياء",
+        "Forms"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "quran-unit1",
+      "title": "اختبار قرآن كريم - الوحدة الأولى",
+      "subject": "القرآن الكريم",
+      "branch": "sharia",
+      "year": null,
+      "type": "online-exam",
+      "category": "Microsoft Forms",
+      "unit": "الوحدة الأولى",
+      "description": "اختبار إلكتروني للفرع الشرعي.",
+      "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEdjABlZtrQAAAAAAAAAAAAO__WkYJaRUM1RFUTM4RjNCT0hVOVFFWE1JWVhSVk4wNy4u",
+      "tags": [
+        "قرآن",
+        "شرعي",
+        "Microsoft Forms"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "quran-unit2",
+      "title": "اختبار قرآن كريم - الوحدة الثانية",
+      "subject": "القرآن الكريم",
+      "branch": "sharia",
+      "year": null,
+      "type": "online-exam",
+      "category": "Microsoft Forms",
+      "unit": "الوحدة الثانية",
+      "description": "اختبار إلكتروني للفرع الشرعي.",
+      "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEdjABlZtrQAAAAAAAAAAAAO__WkYJaRUN0ZENkNUTUJWUVZRWEowWVJNMTVVUkk1Wi4u",
+      "tags": [
+        "قرآن",
+        "شرعي",
+        "Microsoft Forms"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "quran-unit3",
+      "title": "اختبار قرآن كريم - الوحدة الثالثة",
+      "subject": "القرآن الكريم",
+      "branch": "sharia",
+      "year": null,
+      "type": "online-exam",
+      "category": "Microsoft Forms",
+      "unit": "الوحدة الثالثة",
+      "description": "اختبار إلكتروني للفرع الشرعي.",
+      "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEdjABlZtrQAAAAAAAAAAAAO__WkYJaRUOVlMU0tSSFJTQlk4MEQ5RlZGRzZHV1lFOS4u",
+      "tags": [
+        "قرآن",
+        "شرعي",
+        "Microsoft Forms"
+      ],
+      "dateAdded": "2026-08-15"
+    },
+    {
+      "id": "quran-section2",
+      "title": "اختبار قرآن كريم - القسم الثاني",
+      "subject": "القرآن الكريم",
+      "branch": "sharia",
+      "year": null,
+      "type": "online-exam",
+      "category": "Microsoft Forms",
+      "unit": "القسم الثاني",
+      "description": "اختبار إلكتروني للفرع الشرعي.",
+      "url": "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEdjABlZtrQAAAAAAAAAAAAO__WkYJaRUMk5HTDAyQjVEVzlDT1M4MFg4OU4wTjFPWC4u",
+      "tags": [
+        "قرآن",
+        "شرعي",
+        "Microsoft Forms"
+      ],
+      "dateAdded": "2026-08-15"
+    }
+  ],
+  "exams": [],
+  "schools": [
+    {
+      "id": "school-a",
+      "name": "المدرسة الاستدراكية (أ)",
+      "description": "مخصصة للطلاب الذين فاتهم عامان دراسيان سابقان خلال الحرب بالإضافة إلى السنة الحالية. الطالب يدرس 3 سنوات دراسية في عام واحد.",
+      "resourceIds": [
+        "remedial-a-intro",
+        "remedial-a-guide",
+        "remedial-a-schedule-1",
+        "remedial-a-schedule-2",
+        "remedial-apply",
+        "helpdesk",
+        "ministry-gaza-subjects",
+        "schools-guidelines",
+        "remedial-a-wa-1",
+        "remedial-a-wa-2",
+        "remedial-a-facebook"
+      ]
+    },
+    {
+      "id": "school-b",
+      "name": "المدرسة الاستدراكية (ب)",
+      "description": "للطلبة الذين فاتهم عام دراسي واحد فقط خلال الحرب.",
+      "resourceIds": [
+        "remedial-b-intro",
+        "remedial-b-program",
+        "remedial-b-teams",
+        "remedial-b-recordings",
+        "remedial-b-wa",
+        "remedial-b-materials",
+        "virtual-schools",
+        "helpdesk"
+      ]
+    }
+  ],
+  "books": [],
+  "folders": [],
+  "calculator": {
+    "notice": "قواعد احتساب المعدل الرسمي قد تختلف بحسب تعليمات الوزارة. لم يتم تثبيت قواعد رسمية غير مؤكدة هنا. الحاسبة الحالية تعطي تقديراً بناءً على العلامات المدخلة فقط، ولا تعتبر نتيجة رسمية.",
+    "branches": {
+      "scientific": {
+        "name": "العلمي",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 200,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "physics",
+            "name": "الفيزياء",
+            "maxMark": 100,
+            "required": false,
+            "group": "elective",
+            "weight": 1
+          },
+          {
+            "id": "chemistry",
+            "name": "الكيمياء",
+            "maxMark": 100,
+            "required": false,
+            "group": "elective",
+            "weight": 1
+          },
+          {
+            "id": "biology",
+            "name": "الأحياء",
+            "maxMark": 100,
+            "required": false,
+            "group": "elective",
+            "weight": 1
+          },
+          {
+            "id": "technology",
+            "name": "التكنولوجيا",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "religion",
+            "name": "التربية الإسلامية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      },
+      "literary": {
+        "name": "الأدبي / علوم إنسانية",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "geography",
+            "name": "الجغرافيا",
+            "maxMark": 100,
+            "required": false,
+            "group": "elective",
+            "weight": 1
+          },
+          {
+            "id": "history",
+            "name": "التاريخ",
+            "maxMark": 100,
+            "required": false,
+            "group": "elective",
+            "weight": 1
+          },
+          {
+            "id": "culture",
+            "name": "الثقافة",
+            "maxMark": 100,
+            "required": false,
+            "group": "elective",
+            "weight": 1
+          },
+          {
+            "id": "technology",
+            "name": "التكنولوجيا",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "religion",
+            "name": "التربية الإسلامية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      },
+      "sharia": {
+        "name": "الشرعي",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "quran",
+            "name": "القرآن الكريم",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "religion",
+            "name": "التربية الإسلامية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      },
+      "entrepreneurial": {
+        "name": "ريادة وأعمال",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      },
+      "commercial": {
+        "name": "تجاري",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      },
+      "industrial": {
+        "name": "صناعي",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "physics",
+            "name": "الفيزياء",
+            "maxMark": 100,
+            "required": false,
+            "group": "elective",
+            "weight": 1
+          }
+        ]
+      },
+      "home-economics": {
+        "name": "اقتصاد منزلي",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      },
+      "agricultural": {
+        "name": "زراعي",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      },
+      "hotel": {
+        "name": "فندقي",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      },
+      "technology": {
+        "name": "تكنولوجي",
+        "rulesStatus": "غير محددة حالياً",
+        "subjects": [
+          {
+            "id": "arabic",
+            "name": "اللغة العربية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "english",
+            "name": "اللغة الإنجليزية",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          },
+          {
+            "id": "math",
+            "name": "الرياضيات",
+            "maxMark": 100,
+            "required": true,
+            "group": "required",
+            "weight": 1
+          }
+        ]
+      }
+    }
+  },
+  "physicsLaws": [
+    {
+      "id": "ohms-law",
+      "title": "قانون أوم",
+      "formula": "V = I × R",
+      "topic": "الكهرباء",
+      "symbols": [
+        {
+          "name": "V",
+          "meaning": "فرق الجهد الكهربائي"
+        },
+        {
+          "name": "I",
+          "meaning": "شدة التيار الكهربائي"
+        },
+        {
+          "name": "R",
+          "meaning": "المقاومة الكهربائية"
+        }
+      ],
+      "units": [
+        {
+          "symbol": "V",
+          "unit": "Volt"
+        },
+        {
+          "symbol": "I",
+          "unit": "Ampere"
+        },
+        {
+          "symbol": "R",
+          "unit": "Ohm (Ω)"
+        }
+      ],
+      "branch": [
+        "scientific"
+      ],
+      "sourceUrl": "https://moe.edu.ps/m/4060",
+      "source": "وزارة التربية والتعليم العالي الفلسطينية"
+    }
+  ],
+  "tools": {
+    "pomodoro": {
+      "presets": [
+        {
+          "study": 25,
+          "break": 5
+        },
+        {
+          "study": 50,
+          "break": 10
+        },
+        {
+          "study": 90,
+          "break": 15
+        }
+      ]
+    },
+    "studyPlans": {},
+    "countdowns": {}
+  },
+  "questions": []
+}

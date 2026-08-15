@@ -10,7 +10,8 @@ window.SWM = window.SWM || {};
     { href: 'subjects.html', text: 'المواد', icon: '📚' },
     { href: 'library.html', text: 'المكتبة', icon: '📂' },
     { href: 'exams.html', text: 'الاختبارات', icon: '📝' },
-    { href: 'tools.html', text: 'أدوات', icon: '🛠️' },
+    { href: 'tools.html', text: 'أدوات الطالب', icon: '🛠️' },
+    { href: 'teams.html', text: 'Microsoft Teams', icon: '💻' },
     { href: 'dashboard.html', text: 'لوحتي', icon: '📊' },
     { href: 'about.html', text: 'حول', icon: 'ℹ️' }
   ];
@@ -19,7 +20,8 @@ window.SWM = window.SWM || {};
     { href: 'index.html', text: 'الرئيسية', icon: '⌂' },
     { href: 'library.html', text: 'المكتبة', icon: '📂' },
     { href: 'exams.html', text: 'الاختبارات', icon: '📝' },
-    { href: 'tools.html', text: 'أدوات', icon: '🛠️' },
+    { href: 'tools.html', text: 'الأدوات', icon: '🛠️' },
+    { href: 'teams.html', text: 'Teams', icon: '💻' },
     { href: 'dashboard.html', text: 'لوحتي', icon: '📊' }
   ];
 
@@ -49,7 +51,7 @@ window.SWM = window.SWM || {};
             class="nav-item ${activeClass}"
             title="${item.text}"
           >
-            ${item.icon}
+            <span>${item.icon}</span>
             <span>${item.text}</span>
           </a>
         `;
@@ -89,7 +91,10 @@ window.SWM = window.SWM || {};
 
         </div>
 
-        <div data-mobile-menu class="mobile-menu"></div>
+        <div
+          data-mobile-menu
+          class="mobile-menu"
+        ></div>
 
       </nav>
     `;
@@ -113,8 +118,8 @@ window.SWM = window.SWM || {};
             href="${item.href}"
             class="nav-item ${activeClass}"
           >
-            ${item.icon}
-            ${item.text}
+            <span>${item.icon}</span>
+            <span>${item.text}</span>
           </a>
         `;
 
@@ -215,6 +220,7 @@ window.SWM = window.SWM || {};
 
       menuBtn.textContent =
         isOpen ? '✕' : '☰';
+
     });
 
     mobileMenu
@@ -231,6 +237,7 @@ window.SWM = window.SWM || {};
           );
 
           menuBtn.textContent = '☰';
+
         });
 
       });
@@ -247,7 +254,9 @@ window.SWM = window.SWM || {};
       localStorage.getItem('swm-theme');
 
     if (saved === 'light') {
+
       document.body.classList.add('light');
+
       button.textContent = '🌙';
     }
 
@@ -265,6 +274,7 @@ window.SWM = window.SWM || {};
 
       button.textContent =
         light ? '🌙' : '☀️';
+
     });
   }
 

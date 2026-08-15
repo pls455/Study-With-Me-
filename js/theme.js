@@ -1,83 +1,62 @@
-// نظام إدارة المظهر (Light/Dark Mode)
+// نظام إدارة المظهر (Light Mode فقط)
 const ThemeManager = {
   // المتغيرات المتاحة
   STORAGE_KEY: 'theme-preference',
   LIGHT_MODE: 'light',
-  DARK_MODE: 'dark',
-  
-  // الحصول على المظهر المفضل من التخزين أو المتصفح
+
+  // دائمًا نُرجع الوضع النهاري — تم إزالة الوضع الداكن
   getPreference() {
-    const stored = localStorage.getItem(this.STORAGE_KEY);
-    if (stored) {
-      return stored;
-    }
-    
-    // إذا لم يكن هناك تفضيل محفوظ، استخدم تفضيل النظام
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-      return this.LIGHT_MODE;
-    }
-    
-    return this.DARK_MODE;
+    return this.LIGHT_MODE;
   },
-  
-  // تعيين المظهر
-  setTheme(theme) {
+
+  // تعيين المظهر (سيجبر دائمًا على الوضع النهاري)
+  setTheme() {
     const htmlElement = document.documentElement;
-    
-    if (theme === this.LIGHT_MODE) {
-      htmlElement.setAttribute('data-theme', 'light');
-      document.body.classList.remove('dark-mode');
-      document.body.classList.add('light-mode');
-    } else {
-      htmlElement.setAttribute('data-theme', 'dark');
-      document.body.classList.remove('light-mode');
-      document.body.classList.add('dark-mode');
+    htmlElement.setAttribute('data-theme', 'light');
+    document.body.classList.remove('dark-mode');
+    document.body.classList.add('light-mode');
+    try {
+      localStorage.setItem(this.STORAGE_KEY, this.LIGHT_MODE);
+    } catch (e) {
+      // تجاهل أخطاء التخزين (مثلاً في وضع الخصوصية)
     }
-    
-    localStorage.setItem(this.STORAGE_KEY, theme);
-    this.updateThemeToggle(theme);
+    this.updateThemeToggle();
   },
-  
-  // تبديل المظهر
+
+  // تم تعطيل التبديل لأن الوضع الداكن أُلغي
   toggle() {
-    const current = localStorage.getItem(this.STORAGE_KEY) || this.getPreference();
-    const newTheme = current === this.LIGHT_MODE ? this.DARK_MODE : this.LIGHT_MODE;
-    this.setTheme(newTheme);
+    // no-op
+    console.warn('تم تعطيل التبديل: وضع الداكن تم إزالته.');
   },
-  
-  // تحديث مظهر الزر
-  updateThemeToggle(theme) {
+
+  // تحديث مظهر الزر ليعرض فقط الوضع النهاري ويعطّل التفاعل
+  updateThemeToggle() {
     const toggle = document.querySelector('[data-theme-toggle]');
     if (!toggle) return;
-    
-    if (theme === this.LIGHT_MODE) {
-      toggle.innerHTML = '🌙 Dark Mode';
-      toggle.setAttribute('aria-label', 'تفعيل الوضع الليلي');
-    } else {
-      toggle.innerHTML = '☀️ Light Mode';
-      toggle.setAttribute('aria-label', 'تفعيل الوضع النهاري');
+
+    toggle.innerHTML = '☀️ Light Mode';
+    toggle.setAttribute('aria-label', 'الوضع النهاري مفعل');
+    // تعطل الزر لمنع التفاعل
+    try {
+      toggle.disabled = true;
+    } catch (e) {
+      // بعض العناصر ليست أزراراً — نزيل مستمعي النقر بدلًا من ذلك
+      const newToggle = toggle.cloneNode(true);
+      toggle.parentNode.replaceChild(newToggle, toggle);
     }
   },
-  
+
   // تهيئة النظام
   init() {
-    const preference = this.getPreference();
-    this.setTheme(preference);
-    
-    // إضافة مستمع الحدث للزر
+    this.setTheme();
+
+    // إذا وُجد زر التبديل، نضمن أنه لا يستجيب للنقرات
     const toggle = document.querySelector('[data-theme-toggle]');
     if (toggle) {
-      toggle.addEventListener('click', () => this.toggle());
-    }
-    
-    // الاستماع لتغيير تفضيل النظام
-    if (window.matchMedia) {
-      window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
-        if (!localStorage.getItem(this.STORAGE_KEY)) {
-          const newTheme = e.matches ? this.LIGHT_MODE : this.DARK_MODE;
-          this.setTheme(newTheme);
-        }
-      });
+      // إزالة أي مستمعي حدث للنقر عن طريق استبدال العنصر
+      const newToggle = toggle.cloneNode(true);
+      toggle.parentNode.replaceChild(newToggle, toggle);
+      this.updateThemeToggle();
     }
   }
 };

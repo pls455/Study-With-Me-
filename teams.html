@@ -1,35 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
 
   <meta
     name="viewport"
-    content="width=device-width,initial-scale=1,viewport-fit=cover"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
   >
 
   <meta
     name="description"
-    content="مشاكل وحلول Microsoft Teams و eSchool لطلبة غزة."
+    content="مشاكل وحلول Microsoft Teams و eSchool لطلبة غزة، وروابط الدعم الفني والمديريات."
   >
 
   <meta
     name="keywords"
-    content="Microsoft Teams غزة, eSchool غزة, تيمز, التعليم الإلكتروني, طلبة غزة"
+    content="Microsoft Teams غزة, eSchool غزة, تيمز, التعليم الإلكتروني, مديريات غزة"
   >
 
   <title>Microsoft Teams و eSchool | ادرس معي</title>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 
   <style>
-    .teams-section {
-      margin-bottom: 24px;
-    }
-
     .teams-alert {
       border: 1px solid rgba(255, 193, 7, .35);
       background: rgba(255, 193, 7, .08);
@@ -38,116 +34,134 @@
       margin-bottom: 20px;
     }
 
+    .teams-alert h2,
     .teams-alert h3 {
       margin-top: 0;
     }
 
     .teams-card {
-      margin-bottom: 18px;
-    }
-
-    .teams-card h2 {
-      margin-bottom: 12px;
-    }
-
-    .teams-card h3 {
-      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     .teams-card ul,
     .teams-card ol {
-      padding-right: 24px;
+      padding-right: 25px;
     }
 
     .teams-card li {
-      margin-bottom: 9px;
+      margin-bottom: 10px;
       line-height: 1.8;
     }
 
     .teams-step {
-      background: rgba(127, 127, 127, .07);
+      background: rgba(127, 127, 127, .08);
       border-radius: 14px;
       padding: 14px 16px;
-      margin: 10px 0;
-      line-height: 1.8;
+      margin: 12px 0;
+      line-height: 1.9;
     }
 
     .teams-link {
-      display: block;
       word-break: break-word;
-      margin: 8px 0;
     }
 
     .teams-number {
       direction: ltr;
       unicode-bidi: embed;
       display: inline-block;
+      font-weight: 700;
+    }
+
+    .teams-divider {
+      height: 1px;
+      background: rgba(127, 127, 127, .2);
+      margin: 25px 0;
     }
 
     .teams-table-wrap {
+      width: 100%;
       overflow-x: auto;
-      margin-top: 15px;
+      -webkit-overflow-scrolling: touch;
     }
 
     .teams-table {
       width: 100%;
+      min-width: 650px;
       border-collapse: collapse;
-      min-width: 620px;
     }
 
     .teams-table th,
     .teams-table td {
       border: 1px solid rgba(127, 127, 127, .2);
-      padding: 12px;
+      padding: 13px;
       text-align: right;
       vertical-align: top;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     .teams-table th {
       font-weight: 700;
     }
 
-    .teams-contact {
-      font-size: 1.05rem;
-      font-weight: 700;
+    .teams-phone {
       direction: ltr;
+      unicode-bidi: embed;
       display: inline-block;
-      margin: 4px 0;
+      font-weight: 700;
+      margin: 3px 0;
     }
 
-    .teams-divider {
-      height: 1px;
-      background: rgba(127, 127, 127, .18);
-      margin: 22px 0;
-    }
-
-    .teams-small {
+    .teams-muted {
+      opacity: .75;
       font-size: .92rem;
-      opacity: .8;
     }
   </style>
+
 </head>
 
 <body>
 
   <div data-navbar></div>
 
-  <main class="page">
+  <main>
 
     <div class="container">
 
-      <section class="page-title">
-        <h1>💻 مشاكل وحلول Microsoft Teams لطلبة غزة</h1>
-        <p class="muted">
-          دليل مختصر لمساعدة الطالب في Teams و eSchool والتعليم الإلكتروني.
-        </p>
+      <!-- العنوان -->
+
+      <section class="hero">
+
+        <div class="hero-grid">
+
+          <div>
+
+            <span class="eyebrow">
+              💻 التعليم الإلكتروني لطلاب غزة
+            </span>
+
+            <h1>
+              مشاكل وحلول
+              <br>
+              <span class="gradient-text">
+                Microsoft Teams
+              </span>
+            </h1>
+
+            <p class="lead">
+              دليل لطلاب غزة حول Teams و eSchool
+              والدعم الفني والمديريات.
+            </p>
+
+          </div>
+
+        </div>
+
       </section>
 
 
       <!-- تنبيه مهم -->
 
-      <section class="teams-section">
+      <section class="section">
 
         <div class="card teams-alert">
 
@@ -175,139 +189,174 @@
 
       <!-- 1 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>1. تثبيت وفتح تطبيق Teams</h2>
+        <div class="card teams-card">
 
-        <ul>
-          <li>إذا فشل التنصيب، تأكد من وجود مساحة تخزين كافية.</li>
-          <li>أعد تشغيل الجهاز ثم حاول التثبيت مرة أخرى.</li>
-          <li>تأكد من تحديث نظام التشغيل.</li>
-          <li>إذا كان التطبيق يعلق أو تظهر شاشة سوداء، جرّب تحديث التطبيق.</li>
-          <li>إذا استمرت المشكلة، استخدم Teams من المتصفح.</li>
-        </ul>
+          <h2>1. تثبيت وفتح تطبيق Teams</h2>
 
-        <h3>📱 عند وصول كود التحقق</h3>
+          <ul>
+            <li>إذا فشل التنصيب، تأكد من وجود مساحة تخزين كافية.</li>
+            <li>إذا كان التطبيق يعلق، أعد تشغيل الجهاز وحاول مرة أخرى.</li>
+            <li>تأكد من تحديث نظام التشغيل.</li>
+            <li>إذا ظهرت شاشة سوداء، حدّث التطبيق وأعد تشغيله.</li>
+            <li>إذا استمرت المشكلة، استخدم Teams من المتصفح.</li>
+          </ul>
 
-        <ul>
-          <li>استخدم مقدمة فلسطين <strong>+970</strong>.</li>
-          <li>إذا لم تعمل، جرّب <strong>+972</strong> عند الحاجة.</li>
-          <li>يمكن تخطي الخطوة إذا ظهر خيار التخطي.</li>
-        </ul>
+          <h3>📱 عند وصول كود التحقق</h3>
+
+          <ul>
+            <li>استخدم مقدمة فلسطين <strong>+970</strong>.</li>
+            <li>يمكن تجربة <strong>+972</strong> عند الحاجة.</li>
+            <li>يمكن تخطي الخطوة إذا ظهر خيار التخطي.</li>
+          </ul>
+
+        </div>
 
       </section>
 
 
       <!-- 2 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>2. خطأ في رقم الهاتف أو اسم المستخدم</h2>
+        <div class="card teams-card">
 
-        <h3>📧 البريد التعليمي</h3>
+          <h2>2. خطأ في رقم الهاتف أو اسم المستخدم</h2>
 
-        <div class="teams-step">
-          رقم الهوية@vgaza.edu.ps
+          <h3>📧 البريد التعليمي</h3>
+
+          <div class="teams-step">
+            رقم الهوية@vgaza.edu.ps
+          </div>
+
+          <p>
+            مثال:
+            <strong>123456789@vgaza.edu.ps</strong>
+          </p>
+
+          <p>
+            في حال استمرار المشكلة:
+            التواصل مع الدعم الفني أو مسؤول المدرسة الافتراضية.
+          </p>
+
         </div>
-
-        <p>
-          مثال:
-          <strong>123456789@vgaza.edu.ps</strong>
-        </p>
-
-        <p>
-          إذا استمرت المشكلة، تواصل مع الدعم الفني أو مسؤول المدرسة الافتراضية.
-        </p>
 
       </section>
 
 
       <!-- 3 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>3. عدم ظهور الفرق</h2>
+        <div class="card teams-card">
 
-        <p>
-          تواصل مع الدعم الفني:
-        </p>
+          <h2>3. عدم ظهور الفرق</h2>
 
-        <a
-          class="btn btn-primary teams-link"
-          href="https://gaza.moe.edu.ps/helpdesk"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          🛠️ الدعم الفني
-        </a>
+          <p>
+            تواصل مع:
+          </p>
 
-        <p>
-          اختر:
-          <strong>مشكلات تيمز – عدم ظهور الفرق</strong>
-        </p>
+          <a
+            class="btn btn-primary teams-link"
+            href="https://gaza.moe.edu.ps/helpdesk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            🛠️ الدعم الفني
+          </a>
 
-        <div class="teams-step">
-          ⏳ انتظر من يوم إلى ثلاثة أيام.
+          <div class="teams-step">
+            اختر:
+            <strong>مشكلات تيمز – عدم ظهور الفرق</strong>
+          </div>
+
+          <p>
+            ⏳ انتظر من يوم إلى ثلاثة أيام.
+          </p>
+
+          <p>
+            في حال عدم الحل، تواصل مع معلم المادة
+            لإضافتك يدويًا.
+          </p>
+
         </div>
-
-        <p>
-          في حال عدم الحل، تواصل مع معلم المادة لإضافتك يدويًا.
-        </p>
 
       </section>
 
 
       <!-- 4 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>4. نسيان كلمة المرور</h2>
+        <div class="card teams-card">
 
-        <p>
-          كلمة المرور الافتراضية:
-        </p>
+          <h2>4. نسيان كلمة المرور</h2>
 
-        <div class="teams-step">
-          <strong>Gaza@ + أول خمسة أرقام من الهوية</strong>
+          <p>
+            كلمة المرور الافتراضية:
+          </p>
+
+          <div class="teams-step">
+            <strong>
+              Gaza@ + أول خمسة أرقام من الهوية
+            </strong>
+          </div>
+
+          <p>
+            مثال:
+            <strong>Gaza@49876</strong>
+          </p>
+
+          <ul>
+            <li>
+              استخدم خيار
+              <strong>هل نسيت كلمة المرور؟</strong>
+              إذا كان متاحًا.
+            </li>
+
+            <li>
+              في حال عدم الحل، اطلب Reset من الدعم الفني
+              أو مسؤول النظام.
+            </li>
+          </ul>
+
         </div>
-
-        <p>
-          مثال:
-          <strong>Gaza@49876</strong>
-        </p>
-
-        <ul>
-          <li>استخدم خيار <strong>هل نسيت كلمة المرور؟</strong> إذا كان متاحًا.</li>
-          <li>إذا لم تُحل المشكلة، اطلب Reset من الدعم الفني أو مسؤول النظام.</li>
-        </ul>
 
       </section>
 
 
       <!-- 5 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>5. عدم القدرة على إرسال الواجبات</h2>
+        <div class="card teams-card">
 
-        <h3>الحلول</h3>
+          <h2>5. عدم القدرة على إرسال الواجبات</h2>
 
-        <ul>
-          <li>تأكد من اتصال الإنترنت.</li>
-          <li>قلل حجم الملف إذا كان كبيرًا.</li>
-          <li>يفضل استخدام PDF.</li>
-          <li>إذا انتهى الوقت أو حدث خلل، أبلغ المعلم فورًا.</li>
-        </ul>
+          <h3>الحلول</h3>
 
-        <h3>📚 خطوات التسليم</h3>
+          <ul>
+            <li>التأكد من الإنترنت.</li>
+            <li>تقليل حجم الملف.</li>
+            <li>يفضل استخدام PDF.</li>
+            <li>
+              إبلاغ المعلم فورًا إذا انتهى الوقت
+              أو حدث خلل.
+            </li>
+          </ul>
 
-        <div class="teams-step">
-          الواجبات
-          ← الصف
-          ← الواجب
-          ← إضافة عمل
-          ← إرفاق الملف
-          ← تسليم
+          <h3>📚 خطوات التسليم</h3>
+
+          <div class="teams-step">
+            الواجبات
+            ← الصف
+            ← الواجب
+            ← إضافة عمل
+            ← إرفاق الملف
+            ← تسليم
+          </div>
+
         </div>
 
       </section>
@@ -315,33 +364,39 @@
 
       <!-- 6 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>6. عدم القدرة على تقديم الامتحان</h2>
+        <div class="card teams-card">
 
-        <ul>
-          <li>تأكد من اتصال الإنترنت.</li>
-          <li>أبلغ المعلم أو المشرف فورًا عند وجود مشكلة.</li>
-          <li>يمكن توفير فرصة بديلة عند الحاجة.</li>
-        </ul>
+          <h2>6. عدم القدرة على تقديم الامتحان</h2>
+
+          <ul>
+            <li>التأكد من الإنترنت.</li>
+            <li>
+              إبلاغ المعلم أو المشرف فورًا عند وجود مشكلة.
+            </li>
+            <li>
+              توفير فرصة بديلة عند الحاجة.
+            </li>
+          </ul>
+
+        </div>
 
       </section>
 
 
       <!-- قاعدة عامة -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>📌 قاعدة عامة</h2>
+        <div class="card teams-alert">
 
-        <div class="teams-alert">
-
-          <p>
-            ابدأ دائمًا بالدعم الفني.
-          </p>
+          <h2>📌 قاعدة عامة</h2>
 
           <p>
-            وإذا لم تُحل المشكلة، راجع المعلم أو إدارة المدرسة.
+            ابدأ دائمًا بالدعم الفني،
+            وإذا لم تُحل المشكلة راجع المعلم
+            أو إدارة المدرسة.
           </p>
 
         </div>
@@ -351,32 +406,115 @@
 
       <!-- 11 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>11. تفعيل Teams و eSchool</h2>
+        <div class="card teams-card">
 
-        <h3>🔗 ربط Teams مع eSchool</h3>
+          <h2>11. تفعيل Teams و eSchool</h2>
 
-        <p>
-          عند طلب البريد في eSchool استخدم بريد الوزارة:
-        </p>
+          <h3>🔗 ربط Teams مع eSchool</h3>
 
-        <div class="teams-step">
-          <strong>رقم الهوية@vgaza.edu.ps</strong>
+          <p>
+            عند طلب البريد في eSchool استخدم بريد الوزارة:
+          </p>
+
+          <div class="teams-step">
+            <strong>
+              رقم الهوية@vgaza.edu.ps
+            </strong>
+          </div>
+
+          <p>
+            قد توجد فترة انتظار من يوم إلى يومين
+            قبل تفعيل Teams.
+          </p>
+
+          <div class="teams-divider"></div>
+
+          <h3>
+            إذا كان الطالب لم يدرس أثناء الحرب
+            ولا يعرف كيفية متابعة Teams
+          </h3>
+
+          <ol>
+
+            <li>
+              الدخول إلى:
+              <a
+                href="https://www.eschool.edu.ps"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                eSchool
+              </a>
+            </li>
+
+            <li>
+              عدم الاعتماد على تطبيق eSchool
+              إذا كان غير مفعل أو غير محدث.
+            </li>
+
+            <li>
+              التأكد من الصف الحالي.
+            </li>
+
+            <li>
+              إذا ظهر خطأ في رقم الهوية أو اسم المستخدم،
+              التسجيل كطالب جديد من:
+              <a
+                href="https://gaza.moe.edu.ps/students/create"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                تسجيل طالب جديد
+              </a>
+            </li>
+
+            <li>
+              الانتظار يومًا أو يومين.
+            </li>
+
+            <li>
+              العودة إلى eSchool والتأكد من ظهور الاسم.
+            </li>
+
+            <li>
+              بعد التأكد من التسجيل، الدخول إلى Teams.
+            </li>
+
+          </ol>
+
         </div>
 
-        <p>
-          قد توجد فترة انتظار من يوم إلى يومين قبل تفعيل Teams.
-        </p>
+      </section>
 
-        <div class="teams-divider"></div>
 
-        <h3>إذا كان الطالب لم يدرس أثناء الحرب ولا يعرف كيفية متابعة Teams</h3>
+      <!-- 12 -->
 
-        <ol>
+      <section class="section">
 
-          <li>
-            الدخول إلى:
+        <div class="card teams-card">
+
+          <h2>12. روابط التعليم الإلكتروني المهمة</h2>
+
+          <div class="teams-step">
+
+            <strong>الدعم الفني</strong><br>
+
+            <a
+              href="https://gaza.moe.edu.ps/helpdesk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://gaza.moe.edu.ps/helpdesk
+            </a>
+
+          </div>
+
+          <div class="teams-step">
+
+            <strong>eSchool</strong><br>
+
             <a
               href="https://www.eschool.edu.ps"
               target="_blank"
@@ -384,244 +522,222 @@
             >
               https://www.eschool.edu.ps
             </a>
-          </li>
 
-          <li>
-            عدم الاعتماد على تطبيق eSchool إذا كان غير مفعل أو غير محدث.
-          </li>
+          </div>
 
-          <li>
-            التأكد من الصف الحالي.
-          </li>
+          <div class="teams-step">
 
-          <li>
-            إذا ظهر خطأ في رقم الهوية أو اسم المستخدم،
-            التسجيل كطالب جديد من:
+            <strong>تسجيل طالب جديد</strong><br>
+
             <a
               href="https://gaza.moe.edu.ps/students/create"
               target="_blank"
               rel="noopener noreferrer"
             >
-              صفحة تسجيل طالب جديد
+              https://gaza.moe.edu.ps/students/create
             </a>
-          </li>
 
-          <li>
-            الانتظار يومًا أو يومين.
-          </li>
+          </div>
 
-          <li>
-            العودة إلى eSchool والتأكد من ظهور الاسم.
-          </li>
+          <div class="teams-step">
 
-          <li>
-            بعد التأكد من التسجيل، الدخول إلى Teams.
-          </li>
+            <strong>Wise School Android</strong><br>
 
-        </ol>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.wise_edu.madhahib"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Play
+            </a>
 
-      </section>
+          </div>
 
+          <div class="teams-step">
 
-      <!-- 12 -->
+            <strong>Wise School iPhone</strong><br>
 
-      <section class="card teams-card">
+            <a
+              href="https://apps.apple.com/il/app/wise-school/id6448747425"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              App Store
+            </a>
 
-        <h2>12. 🔗 روابط مهمة</h2>
+          </div>
 
-        <div class="teams-step">
-          <strong>الدعم الفني</strong><br>
-          <a
-            href="https://gaza.moe.edu.ps/helpdesk"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://gaza.moe.edu.ps/helpdesk
-          </a>
+          <div class="teams-step">
+
+            <strong>صفحات المدارس الافتراضية</strong><br>
+
+            <a
+              href="https://www.moe.edu.ps/gaza/important-links-Schools"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              صفحة المدارس الافتراضية
+            </a>
+
+          </div>
+
+          <div class="teams-step">
+
+            <strong>إرشادات الدخول إلى eSchool</strong><br>
+
+            <a
+              href="https://moe.edu.ps/m/3784"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              إرشادات eSchool
+            </a>
+
+          </div>
+
+          <div class="teams-step">
+
+            <strong>إرشادات الدخول إلى Teams</strong><br>
+
+            <a
+              href="https://moe.edu.ps/m/3783"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              إرشادات Teams
+            </a>
+
+          </div>
+
+          <div class="teams-step">
+
+            <strong>
+              استعلام عن الدورة المتاح التقدم لها
+            </strong><br>
+
+            <a
+              href="https://taw.inspirete.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              taw.inspirete.net
+            </a>
+
+          </div>
+
+          <div class="teams-step">
+
+            <strong>
+              🎥 فيديو شرح تحميل وتفعيل Teams
+            </strong><br>
+
+            <a
+              href="https://youtu.be/x-tG-pYMus8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              مشاهدة الفيديو
+            </a>
+
+          </div>
+
+          <div class="teams-divider"></div>
+
+          <h3>📞 أرقام الدعم الفني</h3>
+
+          <p>
+            <span class="teams-phone">0562503827</span><br>
+            <span class="teams-phone">0562503824</span><br>
+            <span class="teams-phone">0562503825</span><br>
+            <span class="teams-phone">0562503828</span>
+          </p>
+
+          <p>
+            <strong>إرشاد نفسي:</strong>
+            <span class="teams-phone">0562503822</span>
+          </p>
+
         </div>
-
-        <div class="teams-step">
-          <strong>eSchool</strong><br>
-          <a
-            href="https://www.eschool.edu.ps"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://www.eschool.edu.ps
-          </a>
-        </div>
-
-        <div class="teams-step">
-          <strong>تسجيل طالب جديد</strong><br>
-          <a
-            href="https://gaza.moe.edu.ps/students/create"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://gaza.moe.edu.ps/students/create
-          </a>
-        </div>
-
-        <div class="teams-step">
-          <strong>Wise School Android</strong><br>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.wise_edu.madhahib"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Play
-          </a>
-        </div>
-
-        <div class="teams-step">
-          <strong>Wise School iPhone</strong><br>
-          <a
-            href="https://apps.apple.com/il/app/wise-school/id6448747425"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            App Store
-          </a>
-        </div>
-
-        <div class="teams-step">
-          <strong>صفحات المدارس الافتراضية</strong><br>
-          <a
-            href="https://www.moe.edu.ps/gaza/important-links-Schools"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            صفحة المدارس الافتراضية
-          </a>
-        </div>
-
-        <div class="teams-step">
-          <strong>إرشادات الدخول إلى eSchool</strong><br>
-          <a
-            href="https://moe.edu.ps/m/3784"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            إرشادات eSchool
-          </a>
-        </div>
-
-        <div class="teams-step">
-          <strong>إرشادات الدخول إلى Teams</strong><br>
-          <a
-            href="https://moe.edu.ps/m/3783"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            إرشادات Teams
-          </a>
-        </div>
-
-        <div class="teams-step">
-          <strong>استعلام عن الدورة المتاح التقدم لها</strong><br>
-          <a
-            href="https://taw.inspirete.net/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            taw.inspirete.net
-          </a>
-        </div>
-
-        <div class="teams-step">
-          <strong>🎥 فيديو شرح تحميل وتفعيل Teams</strong><br>
-          <a
-            href="https://youtu.be/x-tG-pYMus8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            مشاهدة الفيديو
-          </a>
-        </div>
-
-        <div class="teams-divider"></div>
-
-        <h3>📞 أرقام الدعم الفني</h3>
-
-        <p>
-          <span class="teams-contact">0562503827</span><br>
-          <span class="teams-contact">0562503824</span><br>
-          <span class="teams-contact">0562503825</span><br>
-          <span class="teams-contact">0562503828</span>
-        </p>
-
-        <p>
-          <strong>إرشاد نفسي:</strong>
-          <span class="teams-contact">0562503822</span>
-        </p>
 
       </section>
 
 
       <!-- 13 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>13. التوجه إلى المديريات</h2>
+        <div class="card teams-card">
 
-        <p>
-          الطالب الذي انقطع عن الدراسة لمدة سنة أو سنتين خلال الحرب
-          ولم يسجل في التعليم الوزاري عن بعد، عليه التوجه إلى المديرية.
-        </p>
-
-        <h3>📄 المطلوب</h3>
-
-        <ul>
-          <li>الهوية الشخصية.</li>
-          <li>صورة آخر شهادة مدرسية.</li>
-        </ul>
-
-        <h3>🎯 الهدف</h3>
-
-        <p>
-          فحص حالة الطالب وتوجيهه للمدرسة المناسبة أو ترفيعه.
-        </p>
-
-        <div class="teams-divider"></div>
-
-        <h3>⚠️ تنبيهات مهمة</h3>
-
-        <ul>
-          <li>
-            طلاب UNRWA المسجلون ويتابعون وجاهيًا أو عن بعد
-            لا يلزمهم التسجيل في الحكومة.
-          </li>
-
-          <li>
-            طلاب المدارس والمبادرات المعتمدة:
-            المدرسة مسؤولة عن إجراءات الترفيع.
-          </li>
-
-          <li>
-            طلاب Teams يمكنهم الاستمرار أونلاين أو التحول للوجاهي.
-          </li>
-
-          <li>
-            لا يمكن الجمع بين الاثنين.
-          </li>
-
-          <li>
-            إذا اختار الطالب الوجاهي، يجب الانسحاب رسميًا من Teams
-            عبر الدعم الفني.
-          </li>
-        </ul>
-
-        <div class="teams-alert">
-
-          <strong>🕘 الدوام الرسمي للمديريات</strong>
+          <h2>13. التوجه إلى المديريات</h2>
 
           <p>
-            الأحد إلى الخميس
+            الطالب الذي انقطع عن الدراسة لمدة سنة أو سنتين
+            خلال الحرب ولم يسجل في التعليم الوزاري عن بعد،
+            عليه التوجه للمديرية.
           </p>
 
+          <h3>📄 المطلوب</h3>
+
+          <ul>
+            <li>الهوية الشخصية.</li>
+            <li>صورة آخر شهادة مدرسية.</li>
+          </ul>
+
+          <h3>🎯 الهدف</h3>
+
           <p>
-            9:00 صباحًا إلى 1:00 ظهرًا
+            فحص حالة الطالب وتوجيهه للمدرسة المناسبة
+            أو ترفيعه.
           </p>
+
+          <div class="teams-divider"></div>
+
+          <h3>⚠️ تنبيهات</h3>
+
+          <ul>
+
+            <li>
+              طلاب UNRWA المسجلون ويتابعون وجاهيًا
+              أو عن بعد لا يلزمهم التسجيل في الحكومة.
+            </li>
+
+            <li>
+              طلاب المدارس والمبادرات المعتمدة:
+              المدرسة مسؤولة عن إجراءات الترفيع.
+            </li>
+
+            <li>
+              طلاب Teams يمكنهم الاستمرار أونلاين
+              أو التحول للوجاهي.
+            </li>
+
+            <li>
+              لا يمكن الجمع بين الاثنين.
+            </li>
+
+            <li>
+              إذا اختار الطالب الوجاهي،
+              يجب الانسحاب رسميًا من Teams
+              عبر الدعم الفني.
+            </li>
+
+          </ul>
+
+          <div class="teams-alert">
+
+            <strong>
+              🕘 الدوام الرسمي للمديريات
+            </strong>
+
+            <p>
+              الأحد إلى الخميس
+            </p>
+
+            <p>
+              9:00 صباحًا إلى 1:00 ظهرًا
+            </p>
+
+          </div>
 
         </div>
 
@@ -630,119 +746,223 @@
 
       <!-- 14 -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>14. المديريات وأرقام التواصل</h2>
+        <div class="card teams-card">
 
-        <div class="teams-table-wrap">
+          <h2>14. المديريات وأرقام التواصل</h2>
 
-          <table class="teams-table">
+          <div class="teams-table-wrap">
 
-            <thead>
-              <tr>
-                <th>المديرية</th>
-                <th>أرقام التواصل</th>
-                <th>المكان</th>
-              </tr>
-            </thead>
+            <table class="teams-table">
 
-            <tbody>
+              <thead>
 
-              <tr>
-                <td>شمال غزة</td>
-                <td>
-                  <span class="teams-contact">+972599770506</span><br>
-                  <span class="teams-contact">+970569069992</span>
-                </td>
-                <td>
-                  مقر مؤقت لمديرية شمال غزة في مبنى المحكمة الشرعية
-                  مقابل الدفاع المدني، الطابق الثاني.
-                </td>
-              </tr>
+                <tr>
+                  <th>المديرية</th>
+                  <th>أرقام التواصل</th>
+                  <th>المكان</th>
+                </tr>
 
-              <tr>
-                <td>شرق غزة</td>
-                <td>
-                  <span class="teams-contact">+972592380001</span>
-                </td>
-                <td>
-                  مركز التدريب المهني بجوار مبنى مدرسة الإمام الشافعي
-                  للتعليم المهني.
-                </td>
-              </tr>
+              </thead>
 
-              <tr>
-                <td>غرب غزة</td>
-                <td>
-                  <span class="teams-contact">+972599753909</span>
-                </td>
-                <td>
-                  مدرسة حسن الحرازين، شارع الثورة، خلف مدرسة فلسطين.
-                </td>
-              </tr>
+              <tbody>
 
-              <tr>
-                <td>الوسطى</td>
-                <td>
-                  <span class="teams-contact">+972599750207</span><br>
-                  <span class="teams-contact">+970599147079</span>
-                </td>
-                <td>
-                  مديرية الوسطى، النصيرات، بجانب مدرسة خالد بن الوليد.
-                </td>
-              </tr>
+                <tr>
 
-              <tr>
-                <td>خانيونس</td>
-                <td>
-                  <span class="teams-contact">+972599616206</span>
-                </td>
-                <td>
-                  مدرسة بيت المقدس بجوار مستشفى ناصر.
-                </td>
-              </tr>
+                  <td>شمال غزة</td>
 
-              <tr>
-                <td>شرق خانيونس</td>
-                <td>
-                  <span class="teams-contact">+972599361705</span><br>
-                  <span class="teams-contact">+972599491578</span>
-                </td>
-                <td>
-                  مدرسة بيت المقدس بجوار مستشفى ناصر.
-                </td>
-              </tr>
+                  <td>
+                    <span class="teams-phone">
+                      +972599770506
+                    </span>
+                    <br>
+                    <span class="teams-phone">
+                      +970569069992
+                    </span>
+                  </td>
 
-              <tr>
-                <td>رفح</td>
-                <td>
-                  <span class="teams-small">لا يوجد رقم مذكور</span>
-                </td>
-                <td>
-                  خانيونس، بير 19، محطة إيتا، البوابة الثانية.
-                </td>
-              </tr>
+                  <td>
+                    مقر مؤقت لمديرية شمال غزة
+                    في مبنى المحكمة الشرعية
+                    مقابل الدفاع المدني،
+                    الطابق الثاني.
+                  </td>
 
-            </tbody>
+                </tr>
 
-          </table>
 
-        </div>
+                <tr>
 
-        <div class="teams-divider"></div>
+                  <td>شرق غزة</td>
 
-        <h3>👤 رؤساء الأقسام</h3>
+                  <td>
+                    <span class="teams-phone">
+                      +972592380001
+                    </span>
+                  </td>
 
-        <div class="teams-step">
-          <strong>رئيس قسم التخطيط</strong><br>
-          أ. محمد عيسى / أبو مؤمن<br>
-          <span class="teams-contact">0567603267</span>
-        </div>
+                  <td>
+                    مركز التدريب المهني بجوار
+                    مبنى مدرسة الإمام الشافعي
+                    للتعليم المهني.
+                  </td>
 
-        <div class="teams-step">
-          <strong>رئيس قسم الامتحانات</strong><br>
-          أ. سعيد شطا / أبو محمد<br>
-          <span class="teams-contact">0567820091</span>
+                </tr>
+
+
+                <tr>
+
+                  <td>غرب غزة</td>
+
+                  <td>
+                    <span class="teams-phone">
+                      +972599753909
+                    </span>
+                  </td>
+
+                  <td>
+                    مدرسة حسن الحرازين،
+                    شارع الثورة،
+                    خلف مدرسة فلسطين.
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>الوسطى</td>
+
+                  <td>
+                    <span class="teams-phone">
+                      +972599750207
+                    </span>
+                    <br>
+                    <span class="teams-phone">
+                      +970599147079
+                    </span>
+                  </td>
+
+                  <td>
+                    مديرية الوسطى،
+                    النصيرات،
+                    بجانب مدرسة خالد بن الوليد.
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>خانيونس</td>
+
+                  <td>
+                    <span class="teams-phone">
+                      +972599616206
+                    </span>
+                  </td>
+
+                  <td>
+                    مدرسة بيت المقدس
+                    بجوار مستشفى ناصر.
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>شرق خانيونس</td>
+
+                  <td>
+                    <span class="teams-phone">
+                      +972599361705
+                    </span>
+                    <br>
+                    <span class="teams-phone">
+                      +972599491578
+                    </span>
+                  </td>
+
+                  <td>
+                    مدرسة بيت المقدس
+                    بجوار مستشفى ناصر.
+                  </td>
+
+                </tr>
+
+
+                <tr>
+
+                  <td>رفح</td>
+
+                  <td>
+                    <span class="teams-muted">
+                      لا يوجد رقم مذكور
+                    </span>
+                  </td>
+
+                  <td>
+                    خانيونس، بير 19،
+                    محطة إيتا،
+                    البوابة الثانية.
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+
+          <div class="teams-divider"></div>
+
+
+          <h3>
+            👤 رؤساء الأقسام
+          </h3>
+
+
+          <div class="teams-step">
+
+            <strong>
+              رئيس قسم التخطيط
+            </strong>
+
+            <br>
+
+            أ. محمد عيسى / أبو مؤمن
+
+            <br>
+
+            <span class="teams-phone">
+              0567603267
+            </span>
+
+          </div>
+
+
+          <div class="teams-step">
+
+            <strong>
+              رئيس قسم الامتحانات
+            </strong>
+
+            <br>
+
+            أ. سعيد شطا / أبو محمد
+
+            <br>
+
+            <span class="teams-phone">
+              0567820091
+            </span>
+
+          </div>
+
         </div>
 
       </section>
@@ -750,15 +970,20 @@
 
       <!-- ملاحظة -->
 
-      <section class="card teams-card">
+      <section class="section">
 
-        <h2>ℹ️ ملاحظة</h2>
+        <div class="card">
 
-        <p class="muted">
-          المعلومات والأرقام الواردة في هذا الدليل هي معلومات إرشادية،
-          وقد تتغير الجهات أو أرقام التواصل أو أماكن المديريات.
-          يُفضّل التأكد من الجهة الرسمية عند الحاجة.
-        </p>
+          <h2>ℹ️ ملاحظة</h2>
+
+          <p class="muted">
+            المعلومات والأرقام الواردة في هذا الدليل
+            هي معلومات إرشادية وقد تتغير الجهات
+            أو أرقام التواصل أو أماكن المديريات.
+            يُفضّل التأكد من الجهة الرسمية عند الحاجة.
+          </p>
+
+        </div>
 
       </section>
 
@@ -766,12 +991,17 @@
 
   </main>
 
+
   <div data-bottom-nav></div>
+
   <div data-footer></div>
 
-  <script src="js/data.js"></script>
-  <script src="js/favorites.js"></script>
-  <script src="js/app.js"></script>
+
+  <script src="./js/theme.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/favorites.js"></script>
 
 </body>
-</html>
+
+  </html>

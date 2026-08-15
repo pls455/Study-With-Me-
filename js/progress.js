@@ -1,0 +1,1 @@
+window.SWMProgress={key:'swm-progress',load(){return SWMTools.loadJSON(this.key,{})},set(subject,unit,status){const x=this.load();x[subject]??={};x[subject][unit]=status;SWMTools.saveJSON(this.key,x)},get(subject,unit){return this.load()?.[subject]?.[unit]||'not-started'}};

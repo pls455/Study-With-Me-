@@ -1,0 +1,1 @@
+(()=>{const n=document.querySelector('#notes');if(!n)return;n.value=localStorage.getItem('swm-notes')||'';document.querySelector('#save-notes').onclick=()=>{localStorage.setItem('swm-notes',n.value);const x=document.createElement('div');x.className='toast';x.textContent='تم حفظ الملاحظات محلياً';document.body.appendChild(x);setTimeout(()=>x.remove(),1400)}})();

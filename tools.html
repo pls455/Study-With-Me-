@@ -1,1 +1,439 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="منصة تعليمية مجانية تجمع مصادر وملفات واختبارات التوجيهي لطلاب غزة وفلسطين."><meta name="keywords" content="توجيهي غزة, توجيهي فلسطين, توجيهي 2026, كتب توجيهي, اختبارات توجيهي, رزم توجيهي, دوسيات توجيهي, امتحانات وزارية"><meta property="og:title" content="ادرس معي - Study With Me | مصادر توجيهي غزة"><meta property="og:description" content="منصة تعليمية مجانية لطلاب غزة وفلسطين."><meta property="og:type" content="website"><title>أدوات الطالب | ادرس معي</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/responsive.css"></head><body><div data-navbar></div><main class="page"><div class="container"><section class="page-title"><h1>🧰 أدوات الطالب</h1><p class="muted">أدوات محلية تعمل داخل المتصفح، بلا حساب ولا Backend. لأن الطالب عنده ما يكفيه من التعقيد.</p></section><div class="tool-grid"><a class="tool-card" href="calculator.html"><div class="emoji">🧮</div><h3>حساب المعدل</h3><p class="muted">تقدير بناءً على العلامات المدخلة.</p></a><a class="tool-card" href="physics-laws.html"><div class="emoji">⚡</div><h3>قوانين الفيزياء</h3><p class="muted">بحث ومفضلة ومراجعة سريعة.</p></a><a class="tool-card" href="dashboard.html"><div class="emoji">📊</div><h3>لوحة الطالب</h3><p class="muted">ملخص سريع لكل أدواتك.</p></a><div class="tool-card"><div class="emoji">⏱️</div><h3>Pomodoro</h3><select id="pomodoro-preset"><option value="25-5">25 / 5</option><option value="50-10">50 / 10</option><option value="90-15">90 / 15</option></select><div id="timer" style="font-size:2.4rem;font-weight:800;margin:8px 0">25:00</div><div class="actions"><button class="btn btn-primary" id="timer-start">Start</button><button class="btn" id="timer-pause">Pause</button><button class="btn" id="timer-reset">Reset</button></div></div></div><section class="section"><div class="split"><div class="card"><h2>📋 مهامي الدراسية</h2><div class="todo-row"><input id="task-input" placeholder="أضف مهمة"><button class="btn btn-primary" id="add-task">إضافة</button></div><div id="tasks" class="list" style="margin-top:12px"></div></div><div class="card"><h2>📝 ملاحظاتي</h2><textarea id="notes" rows="8" placeholder="اكتب ملاحظاتك هنا..."></textarea><button class="btn btn-primary" id="save-notes" style="margin-top:8px">حفظ</button></div></div></section></div></main><div data-bottom-nav></div><div data-footer></div><div class="container"><div class="error" data-load-error role="alert"></div></div><script src="js/data.js"></script><script src="js/favorites.js"></script><script src="js/app.js"></script><script src="js/tools.js"></script><script src="js/progress.js"></script><script src="js/grades.js"></script><script src="js/study-plan.js"></script><script src="js/pomodoro.js"></script><script src="js/tasks.js"></script><script src="js/notes.js"></script></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="منصة تعليمية مجانية تجمع مصادر وملفات واختبارات التوجيهي لطلاب غزة وفلسطين."
+  >
+
+  <meta
+    name="keywords"
+    content="توجيهي غزة, توجيهي فلسطين, توجيهي 2026, كتب توجيهي, اختبارات توجيهي, رزم توجيهي, دوسيات توجيهي, امتحانات وزارية"
+  >
+
+  <meta
+    property="og:title"
+    content="ادرس معي - Study With Me | مصادر توجيهي غزة"
+  >
+
+  <meta
+    property="og:description"
+    content="منصة تعليمية مجانية لطلاب غزة وفلسطين."
+  >
+
+  <meta property="og:type" content="website">
+
+  <title>أدوات الطالب | ادرس معي</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div data-navbar></div>
+
+  <main class="page">
+
+    <div class="container">
+
+      <!-- PAGE HEADER -->
+      <section class="page-title tools-page-header">
+
+        <div class="tools-title-icon">
+          🧰
+        </div>
+
+        <div>
+          <h1>أدوات الطالب</h1>
+
+          <p class="muted">
+            أدوات بسيطة تساعدك في الحساب، المراجعة، تنظيم الوقت والمهام.
+          </p>
+        </div>
+
+      </section>
+
+
+      <!-- TOOLS -->
+      <section class="tools-section">
+
+        <div class="section-heading">
+          <span class="section-heading-line"></span>
+
+          <div>
+            <h2>أدواتك الدراسية</h2>
+
+            <p>
+              اختر الأداة التي تحتاجها وابدأ مباشرة.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="tool-grid">
+
+
+          <!-- CALCULATOR -->
+          <a
+            class="tool-card"
+            href="calculator.html"
+          >
+
+            <div class="tool-icon">
+              🧮
+            </div>
+
+            <div class="tool-content">
+
+              <span class="tool-category">
+                الحساب
+              </span>
+
+              <h3>
+                حساب المعدل
+              </h3>
+
+              <p>
+                احسب معدلك الدراسي بسهولة باستخدام العلامات والمواد التي تدخلها.
+              </p>
+
+            </div>
+
+            <div class="tool-action">
+              <span>فتح الأداة</span>
+              <span>↗</span>
+            </div>
+
+          </a>
+
+
+          <!-- PHYSICS -->
+          <a
+            class="tool-card"
+            href="physics-laws.html"
+          >
+
+            <div class="tool-icon">
+              ⚡
+            </div>
+
+            <div class="tool-content">
+
+              <span class="tool-category">
+                الفيزياء
+              </span>
+
+              <h3>
+                قوانين الفيزياء
+              </h3>
+
+              <p>
+                ابحث عن القوانين المهمة وراجعها بسرعة أثناء الدراسة وحل الأسئلة.
+              </p>
+
+            </div>
+
+            <div class="tool-action">
+              <span>فتح الأداة</span>
+              <span>↗</span>
+            </div>
+
+          </a>
+
+
+          <!-- DASHBOARD -->
+          <a
+            class="tool-card"
+            href="dashboard.html"
+          >
+
+            <div class="tool-icon">
+              📊
+            </div>
+
+            <div class="tool-content">
+
+              <span class="tool-category">
+                المتابعة
+              </span>
+
+              <h3>
+                لوحة الطالب
+              </h3>
+
+              <p>
+                تابع تقدمك الدراسي وشاهد ملخصًا سريعًا لأهم بياناتك وأدواتك.
+              </p>
+
+            </div>
+
+            <div class="tool-action">
+              <span>فتح الأداة</span>
+              <span>↗</span>
+            </div>
+
+          </a>
+
+
+          <!-- POMODORO -->
+          <div class="tool-card tool-card-interactive">
+
+            <div class="tool-icon">
+              ⏱️
+            </div>
+
+            <div class="tool-content">
+
+              <span class="tool-category">
+                تنظيم الوقت
+              </span>
+
+              <h3>
+                مؤقت Pomodoro
+              </h3>
+
+              <p>
+                نظّم جلسة دراستك باستخدام فترات تركيز واستراحة واضحة.
+              </p>
+
+            </div>
+
+
+            <div class="pomodoro-box">
+
+              <select
+                id="pomodoro-preset"
+                aria-label="اختيار مدة Pomodoro"
+              >
+
+                <option value="25-5">
+                  25 دقيقة تركيز / 5 استراحة
+                </option>
+
+                <option value="50-10">
+                  50 دقيقة تركيز / 10 استراحة
+                </option>
+
+                <option value="90-15">
+                  90 دقيقة تركيز / 15 استراحة
+                </option>
+
+              </select>
+
+
+              <div
+                id="timer"
+                class="timer-display"
+              >
+                25:00
+              </div>
+
+
+              <div class="pomodoro-actions">
+
+                <button
+                  class="btn btn-primary"
+                  id="timer-start"
+                  type="button"
+                >
+                  بدء
+                </button>
+
+                <button
+                  class="btn"
+                  id="timer-pause"
+                  type="button"
+                >
+                  إيقاف
+                </button>
+
+                <button
+                  class="btn"
+                  id="timer-reset"
+                  type="button"
+                >
+                  إعادة
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- STUDY TOOLS -->
+      <section class="section">
+
+        <div class="section-heading">
+
+          <span class="section-heading-line"></span>
+
+          <div>
+
+            <h2>
+              مساحة الدراسة
+            </h2>
+
+            <p>
+              رتّب مهامك واكتب ملاحظاتك أثناء المذاكرة.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="study-tools-grid">
+
+
+          <!-- TASKS -->
+          <div class="card study-tool-card">
+
+            <div class="study-card-title">
+
+              <div class="study-card-icon">
+                📋
+              </div>
+
+              <div>
+
+                <h2>
+                  مهامي الدراسية
+                </h2>
+
+                <p>
+                  أضف المهام التي تريد إنجازها.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <div class="todo-row">
+
+              <input
+                id="task-input"
+                type="text"
+                placeholder="مثال: مراجعة درس الرياضيات"
+                autocomplete="off"
+              >
+
+              <button
+                class="btn btn-primary"
+                id="add-task"
+                type="button"
+              >
+                إضافة
+              </button>
+
+            </div>
+
+
+            <div
+              id="tasks"
+              class="list tasks-list"
+            ></div>
+
+          </div>
+
+
+          <!-- NOTES -->
+          <div class="card study-tool-card">
+
+            <div class="study-card-title">
+
+              <div class="study-card-icon">
+                📝
+              </div>
+
+              <div>
+
+                <h2>
+                  ملاحظاتي
+                </h2>
+
+                <p>
+                  احتفظ بملاحظاتك الدراسية داخل المتصفح.
+                </p>
+
+              </div>
+
+            </div>
+
+
+            <textarea
+              id="notes"
+              rows="8"
+              placeholder="اكتب ملاحظاتك هنا..."
+            ></textarea>
+
+
+            <button
+              class="btn btn-primary notes-save-btn"
+              id="save-notes"
+              type="button"
+            >
+              حفظ الملاحظات
+            </button>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <div data-footer></div>
+
+
+  <!-- ERROR -->
+  <div class="container">
+
+    <div
+      class="error"
+      data-load-error
+      role="alert"
+    ></div>
+
+  </div>
+
+
+  <!-- SCRIPTS -->
+  <script src="js/data.js"></script>
+  <script src="js/favorites.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/grades.js"></script>
+  <script src="js/study-plan.js"></script>
+  <script src="js/pomodoro.js"></script>
+  <script src="js/tasks.js"></script>
+  <script src="js/notes.js"></script>
+
+</body>
+
+</html>

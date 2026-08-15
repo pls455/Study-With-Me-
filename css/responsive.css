@@ -1840,3 +1840,658 @@ main {
     font-size: 18px;
   }
 }
+
+/* =========================================================
+   STUDY WITH ME - FINAL UI POLISH
+   ابو ابراهيم - كرم
+   ========================================================= */
+
+/* =========================
+   BRAND
+   ========================= */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+
+  text-decoration: none;
+
+  padding: 6px 9px;
+
+  border-radius: 14px;
+
+  transition:
+    background .2s ease,
+    transform .2s ease;
+}
+
+.brand:hover {
+  background: rgba(139, 92, 246, .08);
+}
+
+.brand-mark {
+  position: relative;
+
+  width: 43px;
+  height: 43px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #8b5cf6,
+      #6366f1 55%,
+      #3b82f6
+    );
+
+  color: white;
+
+  font-size: 22px;
+  font-weight: 900;
+
+  box-shadow:
+    0 7px 20px rgba(99, 102, 241, .25);
+}
+
+.brand-mark::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 2px;
+
+  border-radius: 11px;
+
+  border:
+    1px solid rgba(255,255,255,.18);
+
+  pointer-events: none;
+}
+
+.brand > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.brand strong {
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 850;
+
+  line-height: 1.2;
+
+  letter-spacing: -.3px;
+}
+
+.brand small {
+  color: #a5a9ba;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: .7px;
+
+  text-transform: uppercase;
+}
+
+/* =========================
+   NAV ITEMS
+   ========================= */
+
+.nav-item {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  min-height: 38px;
+
+  padding: 7px 11px;
+
+  color: #9da3b5;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  text-decoration: none;
+
+  transition:
+    color .2s ease,
+    background .2s ease,
+    transform .2s ease;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+
+  background:
+    rgba(139, 92, 246, .08);
+}
+
+.nav-item.active {
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139, 92, 246, .18),
+      rgba(59, 130, 246, .08)
+    );
+
+  border:
+    1px solid rgba(139, 92, 246, .16);
+}
+
+.nav-item.active::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 2px;
+  left: 25%;
+  right: 25%;
+
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #8b5cf6,
+      #3b82f6
+    );
+
+  border-radius: 5px;
+}
+
+/* =========================
+   HEADINGS
+   ========================= */
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -.3px;
+}
+
+.section-head h2 {
+  position: relative;
+
+  color: #f8f7ff;
+
+  font-weight: 800;
+}
+
+.section-head p {
+  color: #969caf;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+.section-title {
+  color: #f8f7ff;
+
+  font-weight: 800;
+}
+
+.section-subtitle {
+  color: #9298aa;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   TOOLS CARDS
+   ========================= */
+
+.tool-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.tool-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  min-height: 245px;
+
+  padding: 21px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #202331,
+      #151720
+    );
+
+  border:
+    1px solid rgba(148,163,184,.13);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 9px 28px rgba(0,0,0,.16);
+
+  overflow: hidden;
+
+  transition:
+    transform .22s ease,
+    border-color .22s ease,
+    box-shadow .22s ease;
+}
+
+.tool-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: -80px;
+  right: -60px;
+
+  width: 190px;
+  height: 190px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(139,92,246,.16),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(139,92,246,.42);
+
+  box-shadow:
+    0 17px 38px rgba(0,0,0,.25);
+}
+
+.tool-icon {
+  position: relative;
+
+  width: 53px;
+  height: 53px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.18),
+      rgba(59,130,246,.09)
+    );
+
+  border:
+    1px solid rgba(139,92,246,.24);
+
+  border-radius: 15px;
+
+  font-size: 24px;
+}
+
+.tool-card h3 {
+  position: relative;
+
+  margin: 0 0 7px;
+
+  color: #f8f7ff;
+
+  font-size: 17px;
+
+  font-weight: 800;
+
+  line-height: 1.5;
+}
+
+.tool-card p {
+  position: relative;
+
+  margin: 0;
+
+  color: #a5aabb;
+
+  font-size: 12.5px;
+
+  line-height: 1.8;
+
+  min-height: 45px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  overflow: hidden;
+}
+
+/* كلمة فتح */
+.tool-card .btn,
+.tool-card a[href],
+.tool-card button {
+  position: relative;
+
+  margin-top: auto;
+
+  min-height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  border-radius: 11px;
+
+  font-size: 12px;
+  font-weight: 750;
+}
+
+/* =========================
+   TOOL OPEN BUTTON
+   ========================= */
+
+.tool-open,
+.open-tool {
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #6366f1
+    );
+
+  color: #fff;
+
+  border: 0;
+
+  box-shadow:
+    0 7px 18px rgba(124,58,237,.18);
+}
+
+.tool-open::after,
+.open-tool::after {
+  content: "↗";
+
+  font-size: 14px;
+}
+
+/* =========================
+   GRADE RESULT
+   ========================= */
+
+.grade-result,
+.average-result,
+.result-card,
+.grade-result-box {
+  position: relative;
+
+  width: 100%;
+
+  margin-top: 22px;
+
+  padding: 25px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #252038,
+      #171a27
+    );
+
+  border:
+    1px solid rgba(139,92,246,.38);
+
+  border-radius: 22px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 14px 35px rgba(0,0,0,.22);
+}
+
+.grade-result::before,
+.average-result::before,
+.result-card::before,
+.grade-result-box::before {
+  content: "";
+
+  position: absolute;
+
+  width: 240px;
+  height: 240px;
+
+  top: -140px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(139,92,246,.22),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+.grade-result .result-label,
+.average-result .result-label {
+  position: relative;
+
+  color: #a9afc1;
+
+  font-size: 12px;
+}
+
+.grade-result .result-number,
+.average-result .result-number,
+.grade-result strong,
+.average-result strong {
+  position: relative;
+
+  display: block;
+
+  margin: 7px 0;
+
+  color: #ffffff;
+
+  font-size: clamp(38px, 9vw, 58px);
+
+  font-weight: 900;
+
+  line-height: 1;
+}
+
+.grade-message,
+.result-message {
+  position: relative;
+
+  display: inline-block;
+
+  margin-top: 8px;
+
+  padding: 7px 13px;
+
+  color: #d8ccff;
+
+  background:
+    rgba(139,92,246,.11);
+
+  border:
+    1px solid rgba(139,92,246,.20);
+
+  border-radius: 9px;
+
+  font-size: 12px;
+
+  font-weight: 750;
+}
+
+.result-description {
+  position: relative;
+
+  margin: 10px auto 0;
+
+  max-width: 520px;
+
+  color: #969caf;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   RESULT LEVELS
+   ========================= */
+
+.grade-excellent {
+  border-color: rgba(34,197,94,.35);
+}
+
+.grade-excellent .result-number {
+  color: #86efac;
+}
+
+.grade-good {
+  border-color: rgba(59,130,246,.35);
+}
+
+.grade-good .result-number {
+  color: #93c5fd;
+}
+
+.grade-average {
+  border-color: rgba(245,158,11,.35);
+}
+
+.grade-average .result-number {
+  color: #fcd34d;
+}
+
+.grade-low {
+  border-color: rgba(239,68,68,.35);
+}
+
+.grade-low .result-number {
+  color: #fca5a5;
+}
+
+/* =========================
+   REMOVE BOTTOM NAV
+   ========================= */
+
+.bottom-nav,
+[data-bottom-nav] {
+  display: none !important;
+}
+
+/* لا نحتاج مساحة للشريط */
+body {
+  padding-bottom: 0 !important;
+}
+
+.footer {
+  padding-bottom: 30px !important;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .tool-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+
+    font-size: 20px;
+  }
+
+  .brand strong {
+    font-size: 15px;
+  }
+
+  .brand small {
+    font-size: 8px;
+  }
+
+  .tool-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .tool-card {
+    min-height: 215px;
+
+    padding: 17px;
+
+    border-radius: 17px;
+  }
+
+  .tool-card h3 {
+    font-size: 16px;
+  }
+
+  .tool-card p {
+    font-size: 12px;
+
+    min-height: auto;
+  }
+
+  .grade-result,
+  .average-result,
+  .result-card,
+  .grade-result-box {
+    padding: 20px 15px;
+
+    border-radius: 18px;
+  }
+   }

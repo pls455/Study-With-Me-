@@ -499,3 +499,436 @@ main {
     font-size: 16px;
   }
     }
+
+/* =========================================================
+   TOOLS PAGE FIX
+   أدوات الطالب - Study With Me
+   ========================================================= */
+
+.tools-page,
+.tools-section,
+.tools-container {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+/* شبكة الأدوات */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+}
+
+/* بطاقة الأداة */
+.tool-card {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+
+  padding: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(30, 32, 45, .96),
+      rgba(15, 17, 25, .98)
+    );
+
+  border: 1px solid var(--border);
+  border-radius: 20px;
+
+  box-shadow: var(--shadow);
+
+  overflow: hidden;
+
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.tool-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(124, 58, 237, .13),
+      transparent 45%
+    );
+
+  pointer-events: none;
+}
+
+.tool-card:hover {
+  transform: translateY(-3px);
+
+  border-color:
+    rgba(124, 58, 237, .55);
+
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, .25);
+}
+
+/* أيقونة الأداة */
+.tool-icon {
+  position: relative;
+
+  width: 52px;
+  height: 52px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 14px;
+
+  border-radius: 15px;
+
+  background:
+    rgba(124, 58, 237, .14);
+
+  border:
+    1px solid rgba(124, 58, 237, .25);
+
+  font-size: 25px;
+}
+
+/* عنوان الأداة */
+.tool-card h3 {
+  position: relative;
+
+  margin: 0 0 8px;
+
+  color: var(--text);
+
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* وصف الأداة */
+.tool-card p {
+  position: relative;
+
+  margin: 0 0 16px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* زر الأداة */
+.tool-card .btn,
+.tool-card a.btn,
+.tool-card button {
+  position: relative;
+
+  width: 100%;
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+}
+
+/* =========================
+   CALCULATORS
+   ========================= */
+
+.calculator-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+
+  width: 100%;
+}
+
+.calculator-card {
+  width: 100%;
+  min-width: 0;
+
+  padding: 20px;
+
+  background:
+    var(--surface);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+/* حقول الأدوات */
+.tool-card input,
+.tool-card select,
+.tool-card textarea,
+.calculator-card input,
+.calculator-card select,
+.calculator-card textarea {
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 44px;
+
+  padding: 10px 13px;
+
+  background:
+    var(--surface-2);
+
+  color:
+    var(--text);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 11px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  transition:
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.tool-card input:focus,
+.tool-card select:focus,
+.tool-card textarea:focus,
+.calculator-card input:focus,
+.calculator-card select:focus,
+.calculator-card textarea:focus {
+  border-color:
+    var(--primary);
+
+  box-shadow:
+    0 0 0 3px rgba(124, 58, 237, .12);
+}
+
+/* مجموعات الحقول */
+.tool-form,
+.calculator-form,
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tool-form {
+  gap: 14px;
+}
+
+.form-group label {
+  color: var(--text);
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* نتيجة الحاسبة */
+.result-box {
+  width: 100%;
+
+  margin-top: 15px;
+  padding: 15px;
+
+  background:
+    rgba(124, 58, 237, .10);
+
+  border:
+    1px solid rgba(124, 58, 237, .25);
+
+  border-radius: 13px;
+
+  color: var(--text);
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+   POMODORO
+   ========================= */
+
+.pomodoro,
+.timer-card {
+  width: 100%;
+  max-width: 650px;
+
+  margin-inline: auto;
+
+  padding: 25px;
+
+  text-align: center;
+
+  background:
+    var(--surface);
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 22px;
+
+  box-shadow:
+    var(--shadow);
+}
+
+.timer-display {
+  margin: 15px 0 20px;
+
+  font-size:
+    clamp(42px, 10vw, 75px);
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  direction: ltr;
+
+  font-variant-numeric:
+    tabular-nums;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.timer-controls .btn {
+  min-width: 120px;
+}
+
+/* =========================
+   MOBILE TOOLS
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .tool-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+  }
+
+  .calculator-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+/* =========================
+   PHONE
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .tool-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 12px;
+  }
+
+  .calculator-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 12px;
+  }
+
+  .tool-card {
+    padding: 17px;
+
+    border-radius: 17px;
+  }
+
+  .tool-card h3 {
+    font-size: 16px;
+  }
+
+  .tool-card p {
+    font-size: 12px;
+  }
+
+  .tool-icon {
+    width: 46px;
+    height: 46px;
+
+    font-size: 22px;
+  }
+
+  .calculator-card {
+    padding: 16px;
+
+    border-radius: 16px;
+  }
+
+  .pomodoro,
+  .timer-card {
+    padding: 18px;
+
+    border-radius: 18px;
+  }
+
+  .timer-display {
+    font-size: 52px;
+  }
+
+  .timer-controls {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    width: 100%;
+  }
+
+  .timer-controls .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+}
+
+/* =========================
+   VERY SMALL PHONES
+   ========================= */
+
+@media (max-width: 380px) {
+
+  .tool-card {
+    padding: 14px;
+  }
+
+  .tool-card h3 {
+    font-size: 15px;
+  }
+
+  .tool-card p {
+    font-size: 11px;
+  }
+
+  .timer-display {
+    font-size: 44px;
+  }
+
+  .timer-controls {
+    grid-template-columns: 1fr;
+  }
+
+}

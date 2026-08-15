@@ -1376,3 +1376,467 @@ main {
     font-size: 9px;
   }
    }
+
+/* =========================================================
+   LIBRARY - SEARCH / FILTERS / RESOURCE CONTENT
+   ========================================================= */
+
+/* صندوق البحث والفلاتر */
+.library-filters,
+.resource-filters {
+  position: relative;
+
+  padding: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(31, 34, 48, 0.98),
+      rgba(20, 22, 31, 0.98)
+    );
+
+  border: 1px solid rgba(139, 92, 246, 0.28);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.20),
+    inset 0 1px 0 rgba(255,255,255,0.035);
+}
+
+/* لمسة إضاءة خفيفة أعلى البوكس */
+.library-filters::before,
+.resource-filters::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 12%;
+
+  width: 35%;
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(139, 92, 246, .8),
+      transparent
+    );
+
+  border-radius: 50%;
+}
+
+/* حقول البحث */
+.library-filters input,
+.library-filters select,
+.resource-filters input,
+.resource-filters select {
+  min-height: 46px;
+
+  padding: 11px 14px;
+
+  background:
+    #151821;
+
+  color:
+    #f5f3ff;
+
+  border:
+    1px solid rgba(148, 163, 184, .20);
+
+  border-radius: 12px;
+
+  font-size: 13px;
+
+  transition:
+    border-color .2s ease,
+    background .2s ease,
+    box-shadow .2s ease,
+    transform .2s ease;
+}
+
+.library-filters input::placeholder,
+.resource-filters input::placeholder {
+  color: #858b9b;
+}
+
+.library-filters input:hover,
+.library-filters select:hover,
+.resource-filters input:hover,
+.resource-filters select:hover {
+  background: #191c27;
+
+  border-color:
+    rgba(139, 92, 246, .38);
+}
+
+.library-filters input:focus,
+.library-filters select:focus,
+.resource-filters input:focus,
+.resource-filters select:focus {
+  background: #171a25;
+
+  border-color:
+    rgba(139, 92, 246, .85);
+
+  box-shadow:
+    0 0 0 3px rgba(139, 92, 246, .12);
+
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   RESOURCE CARD
+   ========================================================= */
+
+.resource-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #202331,
+      #151720
+    );
+
+  border:
+    1px solid rgba(148, 163, 184, .14);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, .16);
+
+  overflow: hidden;
+
+  transition:
+    transform .22s ease,
+    border-color .22s ease,
+    box-shadow .22s ease;
+}
+
+/* خلفية زخرفية */
+.resource-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  top: -90px;
+  right: -70px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(124, 58, 237, .16),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+
+  border-color:
+    rgba(139, 92, 246, .45);
+
+  box-shadow:
+    0 16px 38px rgba(0, 0, 0, .25);
+}
+
+/* =========================================================
+   عنوان المادة
+   ========================================================= */
+
+.resource-card h3 {
+  position: relative;
+
+  margin: 0 0 8px;
+
+  color:
+    #f8f7ff;
+
+  font-size: 17px;
+
+  font-weight: 750;
+
+  line-height: 1.55;
+
+  letter-spacing: -.2px;
+}
+
+/* =========================================================
+   وصف المادة
+   ========================================================= */
+
+.resource-card p {
+  position: relative;
+
+  margin: 0;
+
+  padding: 11px 12px;
+
+  color:
+    #aeb4c3;
+
+  background:
+    rgba(255, 255, 255, .025);
+
+  border-right:
+    2px solid rgba(139, 92, 246, .42);
+
+  border-radius: 9px;
+
+  font-size: 12.5px;
+
+  line-height: 1.85;
+
+  min-height: 62px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   نوع المصدر
+   ========================================================= */
+
+.resource-type {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  width: fit-content;
+
+  margin-top: 7px;
+
+  padding: 5px 9px;
+
+  color:
+    #c4b5fd;
+
+  background:
+    rgba(139, 92, 246, .10);
+
+  border:
+    1px solid rgba(139, 92, 246, .20);
+
+  border-radius: 8px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+/* =========================================================
+   معلومات المادة
+   ========================================================= */
+
+.resource-meta {
+  position: relative;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin-top: 15px;
+}
+
+.resource-meta span {
+  padding: 5px 8px;
+
+  background:
+    rgba(148, 163, 184, .06);
+
+  border:
+    1px solid rgba(148, 163, 184, .12);
+
+  border-radius: 7px;
+
+  color:
+    #9299aa;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   زر فتح المصدر
+   ========================================================= */
+
+.resource-card .btn,
+.resource-card .resource-btn {
+  position: relative;
+
+  margin-top: 16px;
+
+  min-height: 44px;
+
+  border-radius: 12px;
+
+  font-weight: 700;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.resource-card .btn:hover,
+.resource-card .resource-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(124, 58, 237, .20);
+}
+
+/* =========================================================
+   أيقونة المصدر
+   ========================================================= */
+
+.resource-icon {
+  position: relative;
+
+  flex-shrink: 0;
+
+  width: 52px;
+  height: 52px;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(139, 92, 246, .18),
+      rgba(59, 130, 246, .08)
+    );
+
+  border:
+    1px solid rgba(139, 92, 246, .24);
+
+  border-radius: 15px;
+
+  font-size: 24px;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+/* =========================================================
+   عناوين الأقسام
+   ========================================================= */
+
+.resource-category {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin:
+    32px 0 16px;
+}
+
+.resource-category::before {
+  content: "";
+
+  width: 5px;
+  height: 27px;
+
+  flex-shrink: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #8b5cf6,
+      #3b82f6
+    );
+
+  border-radius: 10px;
+}
+
+.resource-category h2 {
+  margin: 0;
+
+  color:
+    #f5f3ff;
+
+  font-size: 21px;
+
+  font-weight: 750;
+}
+
+/* =========================================================
+   الجوال
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .library-filters,
+  .resource-filters {
+    padding: 13px;
+
+    border-radius: 15px;
+
+    box-shadow:
+      0 7px 22px rgba(0,0,0,.16);
+  }
+
+  .library-filters input,
+  .library-filters select,
+  .resource-filters input,
+  .resource-filters select {
+    min-height: 44px;
+  }
+
+  .resource-card {
+    padding: 16px;
+
+    border-radius: 17px;
+  }
+
+  .resource-card h3 {
+    font-size: 15px;
+  }
+
+  .resource-card p {
+    padding: 9px 10px;
+
+    font-size: 12px;
+
+    line-height: 1.8;
+  }
+
+  .resource-icon {
+    width: 46px;
+    height: 46px;
+
+    font-size: 21px;
+
+    border-radius: 13px;
+  }
+
+  .resource-category {
+    margin-top: 25px;
+  }
+
+  .resource-category h2 {
+    font-size: 18px;
+  }
+}

@@ -47,7 +47,7 @@ window.SWM = window.SWM || {};
             </span>
           </a>
           <div style="display: flex; gap: 20px; align-items: center;">
-            <div class="nav-links" style="display: flex; gap: 15px;">
+            <div class="nav-links">
               ${navLinksHTML}
             </div>
             <button data-theme-toggle style="background: none; border: none; font-size: 20px; cursor: pointer; color: var(--text);">☀️</button>
@@ -66,7 +66,7 @@ window.SWM = window.SWM || {};
     const mobileNavLinksHTML = mobileNavItems
       .map(item => {
         const activeClass = isCurrentPage(item.href) ? 'active' : '';
-        return `<a href="${item.href}" class="nav-item ${activeClass}" style="display: block; padding: 12px 0;">${item.icon} ${item.text}</a>`;
+        return `<a href="${item.href}" class="nav-item ${activeClass}">${item.icon} ${item.text}</a>`;
       })
       .join('');
 
@@ -117,12 +117,16 @@ window.SWM = window.SWM || {};
   }
 
   function init() {
-    renderNavbar();
-    renderMobileMenu();
-    renderBottomNav();
-    renderFooter();
-    setupMenuToggle();
-    console.log('✓ تم تهيئة التطبيق');
+    try {
+      renderNavbar();
+      renderMobileMenu();
+      renderBottomNav();
+      renderFooter();
+      setupMenuToggle();
+      console.log('✓ تم تهيئة التطبيق بنجاح');
+    } catch (error) {
+      console.error('خطأ في التهيئة:', error);
+    }
   }
 
   if (document.readyState === 'loading') {
